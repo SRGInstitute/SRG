@@ -31,7 +31,7 @@ header ul li a {
   transition: 0.5s;
 }
 header ul li a:hover {
-  color: #1eb2a6;
+  color: #e75828;
 }
 .start {
   background-color: #1eb2a6;
@@ -49,7 +49,7 @@ header ul li a:hover {
   }
   header {
     margin: 0;
-    background-color: #1eb2a6;
+    background-color: #ed761a;
     position: relative;
   }
   header ul.flexSB {
