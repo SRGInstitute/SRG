@@ -1,22 +1,34 @@
 export const homeAbout = [
   {
     id: 1,
-    cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
-    title: "Online Courses",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    cover: "https://img.icons8.com/color/48/warranty-card.png",
+    title: "Quality Focus",
+    desc: "Committed to excellence, exceeding expectations for clients and stakeholders consistently.",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
-    title: "Earn A Certificates",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Industry Experts:",
+    desc: "A team of seasoned professionals offering top-notch solutions across diverse domains.",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Learn with Expert",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Hands-on Sessions: ",
+    desc: "Interactive workshops providing practical skills for immediate application in professional settings.",
   },
+  {
+    id: 1,
+    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
+    title: "Real-Time Projects:",
+    desc: "Authentic challenges for hands-on experience, fostering critical thinking and problem-solving skills.",
+  },
+  {
+    id: 1,
+    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
+    title: "Best Infrastructure:",
+    desc: "Cutting-edge facilities creating an optimal environment for learning, creativity, and innovation.",
+  }
 ]
 export const awrapper = [
   {
