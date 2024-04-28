@@ -57,7 +57,7 @@ export const coursesCard = [
   {
     id: 1,
     cover: "../images/courses/c1.png",
-    coursesName: "Introducing to Software Engineering",
+    coursesName: "DIPLOMA IN COMPUTER APPLICATION (DCA)",
     courTeacher: [
       {
         dcover: "./images/back.webp",
@@ -71,7 +71,7 @@ export const coursesCard = [
   {
     id: 2,
     cover: "../images/courses/c2.png",
-    coursesName: "Enhancing Adobe Photoshop CC 2020 Skills",
+    coursesName: "WEB / APP DEVELOPMENT",
     courTeacher: [
       {
         dcover: "./images/back.webp",
@@ -85,7 +85,7 @@ export const coursesCard = [
   {
     id: 3,
     cover: "../images/courses/c3.png",
-    coursesName: "HTML, CSS, and Javascript for Web Developers",
+    coursesName: "DIPLOMA IN FINANCIAL ACCOUNTING (DFA)",
     courTeacher: [
       {
         dcover: "./images/back.webp",
@@ -185,55 +185,55 @@ export const online = [
   {
     cover: "./images/courses/online/o1.png",
     hoverCover: "./images/courses/online/o1.1.png",
-    courseName: "UI/UX Design Courses",
-    course: "25 Courses",
+    courseName: "MS OFFICE",
+    course: "5 Courses",
   },
   {
     cover: "./images/courses/online/o2.png",
     hoverCover: "./images/courses/online/o2.1.png",
-    courseName: "Art & Design",
+    courseName: "Canva & Photoshop",
     course: "25 Courses",
   },
   {
     cover: "./images/courses/online/o3.png",
     hoverCover: "./images/courses/online/o3.1.png",
-    courseName: "Computer Science",
+    courseName: "C / C++ / JAVA",
     course: "10 Courses",
   },
   {
     cover: "./images/courses/online/o4.png",
     hoverCover: "./images/courses/online/o4.1.png",
-    courseName: "History & Archeologic",
+    courseName: "HTML/CSS/ JavaScript",
     course: "15 Courses",
   },
   {
     cover: "./images/courses/online/o5.png",
     hoverCover: "./images/courses/online/o5.1.png",
-    courseName: "Software Engineering",
+    courseName: "Kotlin/Swift Programing",
     course: "30 Courses",
   },
   {
     cover: "./images/courses/online/o6.png",
     hoverCover: "./images/courses/online/o6.1.png",
-    courseName: "Information Software",
+    courseName: "Data Structure",
     course: "60 Courses",
   },
   {
     cover: "./images/courses/online/o7.png",
     hoverCover: "./images/courses/online/o7.1.png",
-    courseName: "Health & Fitness",
+    courseName: "ReactJS / Angular",
     course: "10 Courses",
   },
   {
     cover: "./images/courses/online/o8.png",
     hoverCover: "./images/courses/online/o8.1.png",
-    courseName: "Marketing",
+    courseName: "Digital Marketing- SEO, SMO",
     course: "30 Courses",
   },
   {
     cover: "./images/courses/online/o9.png",
     hoverCover: "./images/courses/online/o9.1.png",
-    courseName: "Graphic Design",
+    courseName: "Graphic Design / Video Editing",
     course: "80 Courses",
   },
   {
@@ -245,13 +245,13 @@ export const online = [
   {
     cover: "./images/courses/online/o11.png",
     hoverCover: "./images/courses/online/o11.1.png",
-    courseName: "Business Administration",
+    courseName: "Internet, Email & Web Browsing",
     course: "17 Courses",
   },
   {
     cover: "./images/courses/online/o12.png",
     hoverCover: "./images/courses/online/o12.1.png",
-    courseName: "Web Management",
+    courseName: "AI Chat GPT/ Prompt Engineering",
     course: "17 Courses",
   },
 ]
