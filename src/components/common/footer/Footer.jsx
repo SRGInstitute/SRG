@@ -74,15 +74,16 @@ const Footer = () => {
             <ul>
               <li>
                 <i className='fa fa-map'></i>
-                203 Fake St. Mountain View, San Francisco, California, USA
+                147, Ground floor, Saree Mahal wali Gali, Mangal Bazar, Behrampur Road, Ghaziabad, UP
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
-                +2 392 3929 210
+                <ul>+91-9971564798,&nbsp;&nbsp;</ul>
+                <ul>+91-9891396090</ul>
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>
-                info@yourdomain.com
+                join.srg@gmail.com
               </li>
             </ul>
           </div>

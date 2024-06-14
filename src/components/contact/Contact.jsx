@@ -19,15 +19,16 @@ const Contact = () => {
             <div className='items grid2'>
               <div className='box'>
                 <h4>ADDRESS:</h4>
-                <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                <p>147, Ground floor, Saree Mahal wali Gali, Mangal Bazar, Behrampur Road, Ghaziabad, UP</p>
               </div>
               <div className='box'>
                 <h4>EMAIL:</h4>
-                <p> info@yoursite.com</p>
+                <p> join.srg@gmail.com</p>
               </div>
               <div className='box'>
                 <h4>PHONE:</h4>
-                <p> + 1235 2355 98</p>
+                <p> <li>+91-9971564798</li>
+                <li>+91-9891396090</li></p>
               </div>
             </div>
 

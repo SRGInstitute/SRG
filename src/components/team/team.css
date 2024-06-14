@@ -40,7 +40,7 @@
   transition: 0.5s;
 }
 .team .items:hover {
-  background-color: #F15211;
+  background-color: #F36523;
   color: #fff;
   cursor: pointer;
 }
@@ -51,6 +51,6 @@
   opacity: 1;
 }
 .team .items:hover .overlay i:hover {
-  background-color: #F15211;
+  background-color: #F36523;
   color: #fff;
 }
