@@ -7,7 +7,7 @@ const Head = () => {
         <div className='container flexSB'>
           <div className='logo'>
             <img src='./images/srg-logo.png' alt='SRG Logo' />
-            <p>कंप्यूटर के साथ सपनो की उड़ान</p>
+            <h3>कंप्यूटर के साथ सपनो की उड़ान</h3>
           </div>
 
           <div className='social'>
