@@ -10,10 +10,10 @@ const AboutCard = () => {
       <section className='aboutHome'>
         <div className='container flexSB'>
           <div className='left row'>
-            <img src='./images/about.webp' alt='' />
+            <img src='./images/srg-girl-2.jpg' alt='' />
           </div>
           <div className='right row'>
-            <Heading subtitle='LEARN ANYTHING' title='Our Core Values' />
+            <Heading subtitle='LEARN PRACTICALLY' title='Our Core Values' />
             <div className='items'>
               {homeAbout.map((val) => {
                 return (
