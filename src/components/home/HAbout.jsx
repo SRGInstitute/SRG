@@ -1,15 +1,18 @@
-import React from "react"
-import OnlineCourses from "../allcourses/OnlineCourses"
-import Heading from "../common/heading/Heading"
-import "../allcourses/courses.css"
-import { coursesCard } from "../../dummydata"
+import React from 'react';
+import OnlineCourses from '../allcourses/OnlineCourses';
+import Heading from '../common/heading/Heading';
+import '../allcourses/courses.css';
+import { coursesCard } from '../../dummydata';
 
 const HAbout = () => {
   return (
     <>
       <section className='homeAbout'>
         <div className='container'>
-          <Heading subtitle='our courses' title='explore our popular online courses' />
+          <Heading
+            subtitle='our courses'
+            title='explore our popular online courses'
+          />
 
           <div className='coursesCard'>
             {/* copy code form  coursesCard */}
@@ -63,7 +66,7 @@ const HAbout = () => {
         <OnlineCourses />
       </section>
     </>
-  )
-}
+  );
+};
 
-export default HAbout
+export default HAbout;

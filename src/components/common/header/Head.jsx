@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 const Head = () => {
   return (
@@ -6,8 +6,8 @@ const Head = () => {
       <section className='head'>
         <div className='container flexSB'>
           <div className='logo'>
-            <h1>SRG Computer</h1>
-            <span>Training Institue</span>
+            <img src='./images/srg-logo.png' alt='SRG Logo' />
+            <p>कंप्यूटर के साथ सपनो की उड़ान</p>
           </div>
 
           <div className='social'>
@@ -19,7 +19,7 @@ const Head = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Head
+export default Head;
