@@ -86,7 +86,7 @@ p {
 }
 
 .back {
-  background-image: url('../public/images/back.webp');
+  background-image: url('../../../public/images/back.webp');
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -100,24 +100,6 @@ p {
   color: #fff;
   text-align: center;
 }
-
-.backV2 {
-  background-image: url('../public/images/back.webp');
-  background-size: cover;
-  background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 50vh; /* Adjust the height as needed */
-  padding-top: 30%;
-  padding-right: 50px;
-  color: #fff;
-  text-align: center;
-}
-
-
 .back h1 {
   font-size: 100px;
   font-weight: 400;
@@ -129,10 +111,6 @@ p {
 }
 .margin {
   margin-top: 40.3%;
-}
-
-.marginV2 {
-  margin-top: 11.3%;
 }
 .grid {
   display: grid;

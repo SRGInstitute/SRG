@@ -9,14 +9,18 @@ import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
 import Footer from './components/common/footer/Footer';
 import Home from './components/home/Home';
+import CourseDetail from '../src/components/DetailPage/CourseDetail';
+import AllCourses from './components/DetailPage/AllCourses';
 function App() {
   return (
     <>
       <Router>
         <Header />
         <Switch>
+        <Route path="/course/:id" component={CourseDetail} />
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
+          <Route exact path='/OnlineCourses' component={AllCourses} />
           <Route exact path='/courses' component={CourseHome} />
           <Route exact path='/team' component={Team} />
           <Route exact path='/pricing' component={Pricing} />

@@ -1,0 +1,67 @@
+.box {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .accordion {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none; /* Remove default button border */
+  }
+  
+  .accordion.open {
+    background-color: #ddd;
+  }
+  
+  .text {
+    display: block;
+    padding: 10px;
+  }
+  
+  .module {
+    border-top: 1px solid #ddd;
+  }
+  
+  .module-accordion {
+    background-color: #eaeaea;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none; /* Remove default button border */
+  }
+  
+  .module-accordion .fa {
+    transition: transform 0.3s ease;
+  }
+  
+  .module-accordion.open .fa {
+    transform: rotate(90deg);
+  }
+  
+  .module-text {
+    display: none;
+  }
+  
+  .module-text.active {
+    display: block;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style-type: none;
+    margin-bottom: 5px;
+  }
+  

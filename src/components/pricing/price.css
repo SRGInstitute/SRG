@@ -17,7 +17,7 @@
   margin: 40px 0;
 }
 /*--------------faq-------------*/
-.faq .container {
+/* .faq .container {
   max-width: 70%;
   border-radius: 5px;
 }
@@ -42,6 +42,96 @@
 .faq .accordion:hover {
   background-color: #1eb2a6;
   color: #fff;
-}
+} */
 
 /*--------------faq-------------*/
+
+
+/*========================== Reusable Detail Page STARTING STARTING ===============================*/
+
+.detail-page {
+  padding: 50px 0;
+}
+
+.detail-page .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.box {
+  margin-bottom: 15px;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.accordion:hover {
+  background-color: #f1f1f1;
+}
+
+.accordion h2 {
+  margin: 0;
+}
+
+.accordion span {
+  font-size: 18px;
+}
+
+.text {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+}
+
+.module {
+  margin-top: 10px;
+}
+
+.module h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.module ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.module li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .module h3 {
+    font-size: 14px;
+  }
+
+  .module ul {
+    padding-left: 15px;
+  }
+}
+/*========================== Reusable Detail Page ENDING ENDING ===============================*/
+

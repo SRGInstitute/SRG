@@ -57,7 +57,7 @@ export const awrapper = [
 ];
 export const coursesCard = [
   {
-    id: 1,
+    id: 101,
     cover: '../images/courses/c1.png',
     coursesName: 'DIPLOMA IN COMPUTER APPLICATION (DCA)',
     courTeacher: [
@@ -71,7 +71,7 @@ export const coursesCard = [
     pricePer: '₹600 per month',
   },
   {
-    id: 2,
+    id: 201,
     cover: '../images/courses/c2.png',
     coursesName: 'WEB / APP DEVELOPMENT',
     courTeacher: [
@@ -85,7 +85,7 @@ export const coursesCard = [
     pricePer: '₹2000 per month',
   },
   {
-    id: 3,
+    id: 301,
     cover: '../images/courses/c3.png',
     coursesName: 'DIPLOMA IN FINANCIAL ACCOUNTING (DFA)',
     courTeacher: [
@@ -99,7 +99,7 @@ export const coursesCard = [
     pricePer: '₹700 per month',
   },
   {
-    id: 4,
+    id: 404,
     cover: '../images/courses/c4.png',
     coursesName: 'Introducing to Programming with WordPress',
     courTeacher: [
@@ -113,7 +113,7 @@ export const coursesCard = [
     pricePer: '$3 per month',
   },
   {
-    id: 5,
+    id: 505,
     cover: '../images/courses/c5.png',
     coursesName: 'Introducing to Programming with ReactJS',
     courTeacher: [
@@ -127,7 +127,7 @@ export const coursesCard = [
     pricePer: '$30 per month',
   },
   {
-    id: 6,
+    id: 606,
     cover: '../images/courses/c6.png',
     coursesName: 'Learn Frontend Programming Language',
     courTeacher: [
@@ -141,7 +141,7 @@ export const coursesCard = [
     pricePer: '$80 per month',
   },
   {
-    id: 7,
+    id: 707,
     cover: '../images/courses/c7.png',
     coursesName: 'Introducing to with HTML / CSS',
     courTeacher: [
@@ -155,7 +155,7 @@ export const coursesCard = [
     pricePer: '$2 per month',
   },
   {
-    id: 8,
+    id: 808,
     cover: '../images/courses/c8.png',
     coursesName: 'Introducing to with JAVA',
     courTeacher: [
@@ -169,7 +169,7 @@ export const coursesCard = [
     pricePer: '$40 per month',
   },
   {
-    id: 9,
+    id: 909,
     cover: '../images/courses/c9.png',
     coursesName: 'Introducing to with HTML / CSS / JAVASCRIPT',
     courTeacher: [
@@ -185,76 +185,208 @@ export const coursesCard = [
 ];
 export const online = [
   {
+    id: 101,
     cover: './images/courses/online/o1.png',
     hoverCover: './images/courses/online/o1.1.png',
     courseName: 'MS OFFICE',
     course: '3 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 202,
     cover: './images/courses/online/o2.png',
     hoverCover: './images/courses/online/o2.1.png',
     courseName: 'Canva & Photoshop',
     course: '2-3 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 303,
     cover: './images/courses/online/o3.png',
     hoverCover: './images/courses/online/o3.1.png',
     courseName: 'C / C++ / JAVA',
     course: '2-3 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 404,
     cover: './images/courses/online/o4.png',
     hoverCover: './images/courses/online/o4.1.png',
     courseName: 'HTML/CSS/ JavaScript',
     course: '6 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 505,
     cover: './images/courses/online/o5.png',
     hoverCover: './images/courses/online/o5.1.png',
     courseName: 'Kotlin/Swift Programing',
     course: '3 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 606,
     cover: './images/courses/online/o6.png',
     hoverCover: './images/courses/online/o6.1.png',
     courseName: 'Data Structure',
     course: '2-3 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 707,
     cover: './images/courses/online/o7.png',
     hoverCover: './images/courses/online/o7.1.png',
     courseName: 'ReactJS / Angular',
     course: '6 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 808,
     cover: './images/courses/online/o8.png',
     hoverCover: './images/courses/online/o8.1.png',
     courseName: 'Digital Marketing- SEO, SMO',
     course: '6 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 909,
     cover: './images/courses/online/o9.png',
     hoverCover: './images/courses/online/o9.1.png',
     courseName: 'Graphic Design / Video Editing',
     course: '3 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 1001,
     cover: './images/courses/online/o10.png',
     hoverCover: './images/courses/online/o10.1.png',
     courseName: 'DCA',
     course: '3 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 1002,
     cover: './images/courses/online/o11.png',
     hoverCover: './images/courses/online/o11.1.png',
     courseName: 'Internet, Email & Web Browsing',
     course: '1-2 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
   {
+    id: 1003,
     cover: './images/courses/online/o12.png',
     hoverCover: './images/courses/online/o12.1.png',
     courseName: 'AI Chat GPT/ Prompt Engineering',
     course: '1-2 Months',
+    description: [
+      {
+        tite: "Module 1",
+        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+      },
+      {
+        tite: "Module 2",
+        details: ["Advanced Editing", "Formatting"],
+      }
+    ]
   },
 ];
 export const team = [

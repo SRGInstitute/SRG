@@ -37,7 +37,7 @@ const Header = () => {
             </li>
           </ul>
           <div className='start'>
-            <div className='button'>OUR COURSES</div>
+          <Link className="head"  to='/OnlineCourses'>Our Courses</Link>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? (
