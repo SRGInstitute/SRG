@@ -398,7 +398,7 @@ export const team = [
   {
     cover: './images/team/nizam.jpg',
     name: 'Nizam M.',
-    work: 'Senior Instructor',
+    work: 'Senior Instructor (Guest Faculty)',
   },
   {
     cover: './images/team/t5.webp',
@@ -418,17 +418,17 @@ export const team = [
   {
     cover: './images/team/adarsh.jpg',
     name: 'Adarsh',
-    work: 'Video Editor (Intern)',
+    work: 'Video Editor & Instructor (Intern)',
   },
   {
     cover: './images/team/t1.webp',
     name: 'Nitish',
-    work: 'Web Designing (Intern)',
+    work: 'Office Admin & Web Designing (Intern)',
   },
   {
     cover: './images/team/t8.webp',
     name: 'Ashraf & Sakina',
-    work: 'Intern (ON TRAINING)',
+    work: 'Intern (On Training)',
   },
 ];
 export const price = [
