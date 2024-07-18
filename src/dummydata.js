@@ -34,13 +34,13 @@ export const awrapper = [
   {
     cover:
       'https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png',
-    data: '50+',
+    data: '60+',
     title: 'SUCCESS STORIES',
   },
 
   {
     cover: 'https://img.icons8.com/ios/80/ffffff/athlete.png',
-    data: '10+',
+    data: '5+',
     title: 'TRUSTED TUTORS',
   },
   {
@@ -51,7 +51,7 @@ export const awrapper = [
   },
   {
     cover: 'https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png',
-    data: '20+',
+    data: '50+',
     title: 'COURSES',
   },
 ];
