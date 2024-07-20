@@ -11,7 +11,7 @@ const Head = () => {
           </div>
 
           <div className='social'>
-            <Link to={{ pathname: "https://www.facebook.com/SRGComputerInstitute" }} target="_blank"><i className='fab fa-facebook-f icon'></i></Link>
+            <a href="https://www.facebook.com/SRGComputerInstitute" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f icon"></i></a>
             <i className='fab fa-instagram icon'></i>
             <i className='fab fa-twitter icon'></i>
             <i className='fab fa-youtube icon'></i>
