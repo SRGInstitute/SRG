@@ -8,10 +8,7 @@ const Hero = () => {
       <section className='hero'>
         <div className='container'>
           <div className='row'>
-            <Heading
-              subtitle='WELCOME TO SRG'
-              title='Best Computer Institute'
-            />
+            <Heading subtitle='WELCOME TO' title='SRG COMPUTER INSTITUTE' />
             <p>
               Your gateway to Master your skill from Basic to Advance. Elevate
               your skills, enhance employability, stay ahead in tech! 🚀
