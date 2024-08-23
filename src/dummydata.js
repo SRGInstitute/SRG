@@ -192,14 +192,27 @@ export const online = [
     course: '3 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 202,
@@ -209,14 +222,27 @@ export const online = [
     course: '2-3 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 303,
@@ -226,14 +252,27 @@ export const online = [
     course: '2-3 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 404,
@@ -243,14 +282,27 @@ export const online = [
     course: '6 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 505,
@@ -260,14 +312,27 @@ export const online = [
     course: '3 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 606,
@@ -277,14 +342,27 @@ export const online = [
     course: '2-3 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 707,
@@ -294,14 +372,27 @@ export const online = [
     course: '6 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 808,
@@ -311,14 +402,27 @@ export const online = [
     course: '6 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 909,
@@ -328,14 +432,27 @@ export const online = [
     course: '3 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 1001,
@@ -345,14 +462,27 @@ export const online = [
     course: '3 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 1002,
@@ -362,14 +492,27 @@ export const online = [
     course: '1-2 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
   {
     id: 1003,
@@ -379,24 +522,37 @@ export const online = [
     course: '1-2 Months',
     description: [
       {
-        tite: "Module 1",
-        details: ["Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions","Introduction", "Basic Functions"],
+        tite: 'Module 1',
+        details: [
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+          'Introduction',
+          'Basic Functions',
+        ],
       },
       {
-        tite: "Module 2",
-        details: ["Advanced Editing", "Formatting"],
-      }
-    ]
+        tite: 'Module 2',
+        details: ['Advanced Editing', 'Formatting'],
+      },
+    ],
   },
 ];
 export const team = [
   {
-    cover: './images/team/yasmeen.jpg',
+    cover: './images/team/yasmeen.png',
     name: 'Yasmeen',
     work: 'Founder & Director',
   },
   {
-    cover: './images/team/nizam.jpg',
+    cover: './images/team/nizam-pic.png',
     name: 'Nizam M.',
     work: 'Senior Instructor (Guest Faculty)',
   },

@@ -21,10 +21,10 @@ const Header = () => {
               <Link to='/courses'>All Courses</Link>
             </li>
             <li>
-              <Link to='/about'>About</Link>
+              <Link to='/about'>About Us</Link>
             </li>
             <li>
-              <Link to='/team'>Team</Link>
+              <Link to='/team'>Instructors</Link>
             </li>
             {/* <li>
               <Link to='/pricing'>Pricing</Link>
@@ -37,7 +37,9 @@ const Header = () => {
             </li>
           </ul>
           <div className='start'>
-          <Link className="head"  to='/OnlineCourses'>Our Courses</Link>
+            <Link className='head' to='/OnlineCourses'>
+              Our Courses
+            </Link>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? (
