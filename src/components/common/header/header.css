@@ -34,11 +34,14 @@ header ul li a {
   color: #fff;
   font-weight: 500;
   transition: 0.5s;
+  font-size: 18px;
 }
 header ul li a:hover {
   color: #eceae9;
 }
 .start {
+  font-size: 24px;
+  font-weight: 700;
   background-color: #f36523;
   padding: 30px 70px;
   color: #fff;
