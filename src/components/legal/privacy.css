@@ -1,0 +1,39 @@
+.privacy-section {
+    padding: 50px 0;
+  }
+  
+  .privacy-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .privacy-section .content {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .privacy-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .privacy-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px; /* Added more space between paragraphs */
+  }
+  
+  .privacy-section ul {
+    margin-left: 20px;
+  }
+  
+  .privacy-section ul li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+  }
+  

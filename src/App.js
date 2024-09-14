@@ -11,6 +11,8 @@ import Footer from './components/common/footer/Footer';
 import Home from './components/home/Home';
 import CourseDetail from '../src/components/DetailPage/CourseDetail';
 import AllCourses from './components/DetailPage/AllCourses';
+import PrivacyPolicy from './components/legal/PrivacyContainter';
+
 function App() {
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/OnlineCourses' component={AllCourses} />
+          <Route exact path='/privacy-policy' component={PrivacyPolicy} />
           <Route exact path='/courses' component={CourseHome} />
           <Route exact path='/team' component={Team} />
           <Route exact path='/pricing' component={Pricing} />
