@@ -709,8 +709,22 @@ export const testimonal = [
   {
     id: 3,
     name: 'Nitin Sharma',
-    post: 'ADCA & Website Designing',
+    post: 'DCA & Website Designing',
     desc: 'very good computer institute. teacher ache se smjhate h .. and kafi professional bhi h . computers bhi ache h .. a complete computer institute',
+    cover: './images/testo/man3.png',
+  },
+  {
+    id: 4,
+    name: 'Sachin Verma',
+    post: 'DCA & Website Designing',
+    desc: 'My time at SRG Computer Institute has been life-changing. The Basic Computer Course equipped me with skills in Excel, Word, and PowerPoint, which I now use confidently. The website design module was my favorite, turning creative ideas into reality. The instructors are supportive and make learning enjoyable. SRG is more than just an institute – it’s where you build a strong foundation for your future. The learning environment couldn’t be better!',
+    cover: './images/testo/man3.png',
+  },
+  {
+    id: 5,
+    name: 'Devendra Mahor',
+    post: 'ADCA & Website Designing',
+    desc: 'My experience at SRG Computer Institute has been amazing. The Basic Computer Course helped me master Excel, Word, and PowerPoint, which I now use with ease. I really enjoyed learning website design, where I could bring my ideas to life. The faculty is always supportive and makes learning fun. SRG is the perfect place to build essential skills for a strong career in IT, and I’m grateful for the incredible learning environment.',
     cover: './images/testo/man3.png',
   },
 ];
