@@ -34,7 +34,7 @@ export const awrapper = [
   {
     cover:
       'https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png',
-    data: '60+',
+    data: '100+',
     title: 'SUCCESS STORIES',
   },
 
