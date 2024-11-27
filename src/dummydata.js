@@ -697,7 +697,7 @@ export const testimonal = [
     name: 'Suraj Jha',
     post: 'DCA & Website Designing',
     desc: 'If you wish to start a career in IT field, join SRG. Appreciate the Faculty assistance while learning. They make every effort to clear up any confusions or doubts.',
-    cover: './images/testo/man.png',
+    cover: './images/testo/suraj-jha.jpg',
   },
   {
     id: 2,
