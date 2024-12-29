@@ -22,7 +22,7 @@ const Footer = () => {
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <img src='./images/srg-logo.png' alt='SRG Logo' />
+            <img src='./images/srg-computer-logo.png' alt='SRG Logo' />
             <h3>कंप्यूटर के साथ सपनो की उड़ान</h3>
             <p>
               Your gateway to Master your skill from Basic to Advance. Elevate
