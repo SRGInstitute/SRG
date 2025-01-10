@@ -19,7 +19,7 @@ function App() {
       <Router>
         <Header />
         <Switch>
-        <Route path="/course/:id" component={CourseDetail} />
+          <Route path='/course/:id' component={CourseDetail} />
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/OnlineCourses' component={AllCourses} />

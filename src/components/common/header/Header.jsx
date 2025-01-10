@@ -33,6 +33,15 @@ const Header = () => {
               <Link to='/journal'>Journal</Link>
             </li> */}
             <li>
+              <a
+                href='https://srgian.netlify.app/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='external-link'>
+                SRGian
+              </a>
+            </li>
+            <li>
               <Link to='/contact'>Contact</Link>
             </li>
           </ul>
