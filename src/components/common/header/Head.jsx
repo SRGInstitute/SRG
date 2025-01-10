@@ -22,7 +22,7 @@ const Head = () => {
               <i className='fab fa-facebook-f icon'></i>
             </a>
             <a
-              href='https://www.instagram.com/srg_computer_institute/'
+              href='https://www.instagram.com/srg_computer/'
               target='_blank'
               rel='noopener noreferrer'>
               <i className='fab fa-instagram icon'></i>

@@ -553,7 +553,7 @@ export const team = [
   },
   {
     cover: './images/team/nizam-pic.png',
-    name: 'Nizam M.',
+    name: 'Nizam Sir',
     work: 'Senior Instructor (Guest Faculty)',
   },
   {
@@ -717,14 +717,21 @@ export const testimonal = [
     id: 4,
     name: 'Sachin Verma',
     post: 'DCA & Website Designing',
-    desc: 'My time at SRG Computer Institute has been life-changing. The Basic Computer Course equipped me with skills in Excel, Word, and PowerPoint, which I now use confidently. The website design module was my favorite, turning creative ideas into reality. The instructors are supportive and make learning enjoyable. SRG is more than just an institute – it’s where you build a strong foundation for your future. The learning environment couldn’t be better!',
-    cover: './images/testo/man3.png',
+    desc: 'My time at SRG Computer Institute has been amazing. I learned Excel, Word, PowerPoint, and website design. The teachers are supportive, and the environment is great for learning.',
+    cover: './images/testo/sachin.jpg',
   },
   {
     id: 5,
     name: 'Devendra Mahor',
-    post: 'ADCA & Website Designing',
-    desc: 'My experience at SRG Computer Institute has been amazing. The Basic Computer Course helped me master Excel, Word, and PowerPoint, which I now use with ease. I really enjoyed learning website design, where I could bring my ideas to life. The faculty is always supportive and makes learning fun. SRG is the perfect place to build essential skills for a strong career in IT, and I’m grateful for the incredible learning environment.',
+    post: 'DCA & Website Designing',
+    desc: 'I had a great experience at SRG Computer Institute. I learned Excel, Word, PowerPoint, and website design. The teachers are kind and helpful, making learning easy.',
     cover: './images/testo/man3.png',
+  },
+  {
+    id: 6,
+    name: 'Archana Rajpoot',
+    post: 'DCA & Programming',
+    desc: 'SRG Computer Institute’s DCA course taught me valuable skills in MS Office and programming. The supportive teachers made learning easy and enjoyable for my career growth.',
+    cover: './images/testo/women-avatar.png',
   },
 ];
