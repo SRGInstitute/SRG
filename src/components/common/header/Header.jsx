@@ -42,6 +42,13 @@ const Header = () => {
               </a>
             </li>
             <li>
+              <a
+                href='https://srgeducation.netlify.app/'
+                rel='noopener noreferrer'>
+                Certificate
+              </a>
+            </li>
+            <li>
               <Link to='/contact'>Contact</Link>
             </li>
           </ul>
