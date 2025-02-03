@@ -34,7 +34,7 @@ const Header = () => {
             </li> */}
             <li>
               <a
-                href='https://srgian.netlify.app/'
+                href='https://students.srgeducation.in/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='external-link'>
