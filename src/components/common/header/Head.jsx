@@ -11,8 +11,9 @@ const Head = () => {
                 <img src='./images/srg-logo.png' alt='SRG Logo' />
               </a>
             </li>
-            <h3>कंप्यूटर के साथ सपनो की उड़ान</h3>
           </div>
+
+          <div class='tagline'>कंप्यूटर के साथ सपनो की उड़ान</div>
 
           <div className='social'>
             <a

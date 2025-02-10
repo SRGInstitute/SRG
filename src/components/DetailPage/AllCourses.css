@@ -16,6 +16,10 @@ body {
 .flexSB {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
 }
 .icon {
   width: 40px;
@@ -148,6 +152,11 @@ p {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
 }
+
+.tagline {
+  font-size: 24px;
+  font-weight: bold;
+}
 @media screen and (max-width: 768px) {
   .grid2,
   .grid3,
@@ -158,6 +167,16 @@ p {
     background-position: center;
     padding-top: 50%;
     height: 80vh;
+  }
+
+  .flexSB {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
   }
 }
 
