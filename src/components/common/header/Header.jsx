@@ -53,9 +53,9 @@ const Header = () => {
             </li>
           </ul>
           <div className='start'>
-            <Link className='head' to='/OnlineCourses'>
+            <a className='head' href='tel:+919891396090'>
               +91 98913 96090
-            </Link>
+            </a>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? (

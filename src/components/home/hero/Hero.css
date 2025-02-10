@@ -26,8 +26,8 @@
   }
   .hero {
     background-position: right;
-    padding-top: 50%;
-    height: 80vh;
+    padding-top: 350px;
+    height: 100vh;
     background-image: none;
     background-color: lightgray;
   }
