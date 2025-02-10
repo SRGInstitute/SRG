@@ -33,12 +33,12 @@ const Head = () => {
               rel='noopener noreferrer'>
               <i className='fab fa-youtube icon'></i>
             </a>
-            <a
+            {/* <a
               href='https://x.com/SRGCTI/'
               target='_blank'
               rel='noopener noreferrer'>
               <i className='fab fa-twitter icon'></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </section>

@@ -28,6 +28,8 @@
     background-position: right;
     padding-top: 50%;
     height: 80vh;
+    background-image: none;
+    background-color: lightgray;
   }
   .hero .row {
     width: 100%;

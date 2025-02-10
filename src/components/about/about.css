@@ -71,12 +71,19 @@
 /*----------awrapper------------*/
 @media screen and (max-width: 768px) {
   .aboutHome .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .aboutHome .row {
     width: 100%;
   }
   .awrapper {
     height: 50vh;
+  }
+  .aboutHome #heading {
+    text-align: center;
+  }
+
+  .aboutHome .right {
+    padding: 60px 20px;
   }
 }

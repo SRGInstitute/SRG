@@ -152,7 +152,7 @@ p {
   .grid2,
   .grid3,
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .back {
     background-position: center;
@@ -160,3 +160,9 @@ p {
     height: 80vh;
   }
 }
+
+/* @media screen and (max-width: 768px) {
+  .flexSB {
+    display: none;
+  }
+} */
