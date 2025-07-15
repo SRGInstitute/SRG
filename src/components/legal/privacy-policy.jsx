@@ -10,7 +10,7 @@ const PrivacyContent = () => (
       <h2>1. Rules and Regulations</h2>
       <div className="subsection">
         <h3>1.1 Admission & Enrollment</h3>
-        <ul>
+        <ul style={{ listStyleType: 'disc' }}>
           <li>Admission is confirmed only after full payment of course fees.</li>
           <li>All required documents must be submitted at the time of enrollment.</li>
           <li>SRG reserves the right to refuse admission without providing reasons.</li>
