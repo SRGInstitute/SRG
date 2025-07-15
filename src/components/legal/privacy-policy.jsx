@@ -95,7 +95,7 @@ const PrivacyContent = () => (
         </tbody>
       </table>
       <p className="notes">
-        <strong>Mode of Classes:</strong> Offline; <strong>Schedule:</strong> 5 days/week; <strong>Fees:</strong> ₹300; <strong>Attendance Required:</strong> 80%.
+        <strong>Mode of Classes:</strong> Offline; <strong>Class Schedule:</strong> 5/6 days/week; <strong>Certificate Examination Fees:</strong> ₹300; <strong>Attendance Required:</strong> 80%.
       </p>
       <div className="subsection">
         <h3>Passing Criteria</h3>
