@@ -19,7 +19,7 @@ const PrivacyContent = () => (
       <div className="subsection">
         <h3>1.2 Attendance</h3>
         <ul>
-          <li>Maintain a minimum of 75% attendance to be eligible for certification.</li>
+          <li>Maintain a minimum of 80% attendance to be eligible for certification.</li>
           <li>Inform administration in advance of any planned absence.</li>
           <li>Repeated unexcused absences may result in termination from the course.</li>
         </ul>
