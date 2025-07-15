@@ -1,57 +1,57 @@
-.privacy-section {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-}
-.container {
+.privacy-content {
+  font-family: 'Segoe UI', sans-serif;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  padding: 2rem;
   background: #ffffff;
-  padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-.privacy-section h1 {
-  font-size: 2rem;
-  margin-bottom: 1em;
-  color: #00539C;
-  text-align: center;
+.section + .section {
+  margin-top: 2.5rem;
 }
-.privacy-section h2 {
+.section h2 {
   font-size: 1.5rem;
-  margin-top: 1.5em;
   color: #0A2342;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
 }
-.privacy-section h3 {
+.subsection h3 {
   font-size: 1.25rem;
-  margin-top: 1em;
   color: #333333;
+  margin-top: 1rem;
 }
-.privacy-section ul {
-  list-style-type: disc;
-  margin-left: 1.5em;
-  margin-bottom: 1em;
+.subsection ul {
+  list-style: disc;
+  margin: 0.5rem 0 1rem 1.5rem;
 }
-.privacy-section ul li {
-  margin-bottom: 0.5em;
-}
-.privacy-section table {
+table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
-.privacy-section table th,
-.privacy-section table td {
+table th,
+table td {
   border: 1px solid #ccc;
-  padding: 0.75em;
+  padding: 0.75rem;
   text-align: left;
 }
-.privacy-section table thead {
-  background-color: #f2f2f2;
+table thead {
+  background: #f2f2f2;
 }
-.privacy-section footer {
-  text-align: center;
-  margin-top: 2em;
-  color: #666666;
-  font-size: 0.9rem;
+.notes {
+  margin-top: 1rem;
+  color: #555555;
+  font-size: 0.95rem;
+}
+@media (max-width: 600px) {
+  .privacy-content {
+    padding: 1rem;
+  }
+  .section h2 {
+    font-size: 1.25rem;
+  }
+  .subsection h3 {
+    font-size: 1.1rem;
+  }
 }
