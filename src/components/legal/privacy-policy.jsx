@@ -1,6 +1,6 @@
 // PrivacyContent.jsx
 import React from 'react';
-import './PrivacyContent.css';
+import './PrivacyCard.css';
 
 const PrivacyContent = () => (
   <div className="privacy-content">
