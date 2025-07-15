@@ -1,5 +1,4 @@
 import React from 'react';
-import './PrivacyCard.css';
 
 const PrivacyCard = () => {
   return (
