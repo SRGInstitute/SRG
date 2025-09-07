@@ -1,6 +1,6 @@
-import React from "react"
-import "./courses.css"
-import { coursesCard } from "../../dummydata"
+import React from 'react';
+import './courses.css';
+import { coursesCard } from '../../dummydata';
 
 const CoursesCard = () => {
   return (
@@ -53,7 +53,7 @@ const CoursesCard = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default CoursesCard
+export default CoursesCard;

@@ -1,14 +1,14 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './courses.css';
 import { online } from '../../dummydata';
 import Heading from '../common/heading/Heading';
 
 const OnlineCourses = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleCourseClick = (index) => {
-    history.push(`/course/${index}`);
+    navigate(`/course/${index}`);
   };
 
   return (
@@ -18,7 +18,10 @@ const OnlineCourses = () => {
           <Heading subtitle='COURSES' title='Our Best Courses' />
           <div className='content grid3'>
             {online.map((val, index) => (
-              <div key={index} className='box' onClick={() => handleCourseClick(val.id)}>
+              <div
+                key={index}
+                className='box'
+                onClick={() => handleCourseClick(val.id)}>
                 <div className='img'>
                   <img src={val.cover} alt='' />
                   <img src={val.hoverCover} alt='' className='show' />

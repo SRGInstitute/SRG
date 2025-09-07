@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/common/header/Header';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/about/About';
 import CourseHome from './components/allcourses/CourseHome';
 import Team from './components/team/Team';
@@ -18,18 +18,18 @@ function App() {
     <>
       <Router>
         <Header />
-        <Switch>
-          <Route path='/course/:id' component={CourseDetail} />
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/OnlineCourses' component={AllCourses} />
-          <Route exact path='/privacy-policy' component={PrivacyPolicy} />
-          <Route exact path='/courses' component={CourseHome} />
-          <Route exact path='/team' component={Team} />
-          <Route exact path='/pricing' component={Pricing} />
-          <Route exact path='/journal' component={Blog} />
-          <Route exact path='/contact' component={Contact} />
-        </Switch>
+        <Routes>
+          <Route path='/course/:id' element={<CourseDetail />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/OnlineCourses' element={<AllCourses />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='/courses' element={<CourseHome />} />
+          <Route path='/team' element={<Team />} />
+          <Route path='/pricing' element={<Pricing />} />
+          <Route path='/journal' element={<Blog />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
         <Footer />
       </Router>
     </>
