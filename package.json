@@ -26,5 +26,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-  }
+  },
+
+  "engines": {
+  "node": ">=20.19.0",
+  "npm": ">=9"
+}
 }
