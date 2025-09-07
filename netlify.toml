@@ -6,3 +6,6 @@
   [build]
   image   = "ubuntu-24-04"
   command = "npm run build"
+  
+[build.environment]
+  NODE_VERSION = "20.19.0"
