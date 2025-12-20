@@ -12,6 +12,8 @@ import Home from './components/home/Home';
 import CourseDetail from '../src/components/DetailPage/CourseDetail';
 import AllCourses from './components/DetailPage/AllCourses';
 import PrivacyPolicy from './components/legal/PrivacyContainter';
+import StudentIDEntry from './components/student/StudentIDEntry';
+import Results from './components/results/Results';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <Route path='/pricing' element={<Pricing />} />
           <Route path='/journal' element={<Blog />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/student-id-entry' element={<StudentIDEntry />} />
+          <Route path='/results' element={<Results />} />
         </Routes>
         <Footer />
       </Router>
