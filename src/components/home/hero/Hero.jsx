@@ -1,8 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Heading from '../../common/heading/Heading';
 import './Hero.css';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleScholarshipClick = (e) => {
+    e.preventDefault();
+    navigate('/scholarship');
+  };
+
   return (
     <>
       <section className='hero'>
@@ -21,10 +29,41 @@ const Hero = () => {
                 VIEW COURSES <i className='fa fa-long-arrow-alt-right'></i>
               </button>
             </div>
+            <div 
+              className='scholarship-banner-link' 
+              onClick={handleScholarshipClick}
+              role='button'
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  navigate('/scholarship');
+                }
+              }}
+            >
+              <div className='scholarship-banner'>
+                <div className='banner-content'>
+                  <div className='banner-left'>
+                    <div className='banner-icon'>
+                      <i className='fa fa-graduation-cap'></i>
+                    </div>
+                    <div className='banner-text'>
+                      <h3>Scholarship Program Available!</h3>
+                      <p>Apply now for financial assistance and make your education dreams come true</p>
+                    </div>
+                  </div>
+                  <div className='banner-right'>
+                    <span className='scholarship-btn'>
+                      Apply for Scholarship <i className='fa fa-arrow-right'></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <div className='margin'></div>
+      <div className='hero-spacer'></div>
     </>
   );
 };

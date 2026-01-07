@@ -14,6 +14,7 @@ import AllCourses from './components/DetailPage/AllCourses';
 import PrivacyPolicy from './components/legal/PrivacyContainter';
 import StudentIDEntry from './components/student/StudentIDEntry';
 import Results from './components/results/Results';
+import Scholarship from './components/scholarship/Scholarship';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/student-id-entry' element={<StudentIDEntry />} />
           <Route path='/results' element={<Results />} />
+          <Route path='/scholarship' element={<Scholarship />} />
         </Routes>
         <Footer />
       </Router>
