@@ -46,6 +46,16 @@ const Header = () => {
                 Scholarship
               </Link>
             </li>
+            <li>
+              <Link to='/calendar'>
+                <i className='fa fa-calendar'></i> Calendar
+              </Link>
+            </li>
+            <li>
+              <Link to='/top-performers'>
+                <i className='fa fa-trophy'></i> Top Performers
+              </Link>
+            </li>
             {/* <li>
               <a
                 href='https://srgeducation.netlify.app/'

@@ -62,6 +62,13 @@ header ul li a {
   transition: 0.5s;
   font-size: 18px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+header ul li a i {
+  font-size: 16px;
 }
 
 header ul li a:hover {
@@ -159,6 +166,10 @@ nav ul li a.scholarship-nav-link:hover {
     padding: 4px 6px;
   }
 
+  header ul li a i {
+    font-size: 13px;
+  }
+
   nav ul li a.scholarship-nav-link {
     padding: 4px 10px;
     font-size: 14px;
@@ -187,6 +198,10 @@ nav ul li a.scholarship-nav-link:hover {
   header ul li a {
     font-size: 14px;
     padding: 5px 6px;
+  }
+
+  header ul li a i {
+    font-size: 12px;
   }
 
   nav ul li a.scholarship-nav-link {
