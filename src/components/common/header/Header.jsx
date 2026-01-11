@@ -42,12 +42,17 @@ const Header = () => {
               </a>
             </li>
             <li>
+              <Link to='/scholarship' className='scholarship-nav-link'>
+                Scholarship
+              </Link>
+            </li>
+            {/* <li>
               <a
                 href='https://srgeducation.netlify.app/'
                 rel='noopener noreferrer'>
                 Certificate
               </a>
-            </li>
+            </li> */}
             <li>
               <Link to='/results'>Results</Link>
             </li>
