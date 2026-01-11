@@ -1,0 +1,310 @@
+{
+  "year": 2026,
+  "events": [
+    {
+      "id": 1,
+      "date": "2026-01-15",
+      "title": "Viva Day - DCA",
+      "type": "viva",
+      "description": "Viva voce examination for DCA students",
+      "category": "examination"
+    },
+    {
+      "id": 2,
+      "date": "2026-01-20",
+      "title": "Revision Day - ADCA",
+      "type": "revision",
+      "description": "Revision session for ADCA batch",
+      "category": "academic"
+    },
+    {
+      "id": 3,
+      "date": "2026-01-26",
+      "title": "Republic Day - Holiday",
+      "type": "holiday",
+      "description": "National holiday",
+      "category": "holiday"
+    },
+    {
+      "id": 4,
+      "date": "2026-02-10",
+      "title": "Viva Day - MS Office",
+      "type": "viva",
+      "description": "Viva voce examination for MS Office students",
+      "category": "examination"
+    },
+    {
+      "id": 5,
+      "date": "2026-02-15",
+      "title": "Revision Day - Web Designing",
+      "type": "revision",
+      "description": "Revision session for Web Designing batch",
+      "category": "academic"
+    },
+    {
+      "id": 6,
+      "date": "2026-02-20",
+      "title": "Practical Exam - DCA",
+      "type": "exam",
+      "description": "Practical examination for DCA students",
+      "category": "examination"
+    },
+    {
+      "id": 7,
+      "date": "2026-03-08",
+      "title": "Holi - Holiday",
+      "type": "holiday",
+      "description": "Festival holiday",
+      "category": "holiday"
+    },
+    {
+      "id": 8,
+      "date": "2026-03-15",
+      "title": "Viva Day - ADCA",
+      "type": "viva",
+      "description": "Viva voce examination for ADCA students",
+      "category": "examination"
+    },
+    {
+      "id": 9,
+      "date": "2026-03-22",
+      "title": "Revision Day - Tally",
+      "type": "revision",
+      "description": "Revision session for Tally batch",
+      "category": "academic"
+    },
+    {
+      "id": 10,
+      "date": "2026-03-29",
+      "title": "Theory Exam - DCA",
+      "type": "exam",
+      "description": "Theory examination for DCA students",
+      "category": "examination"
+    },
+    {
+      "id": 11,
+      "date": "2026-04-10",
+      "title": "Viva Day - Graphics Designing",
+      "type": "viva",
+      "description": "Viva voce examination for Graphics Designing students",
+      "category": "examination"
+    },
+    {
+      "id": 12,
+      "date": "2026-04-14",
+      "title": "Ambedkar Jayanti - Holiday",
+      "type": "holiday",
+      "description": "National holiday",
+      "category": "holiday"
+    },
+    {
+      "id": 13,
+      "date": "2026-04-20",
+      "title": "Revision Day - App Development",
+      "type": "revision",
+      "description": "Revision session for App Development batch",
+      "category": "academic"
+    },
+    {
+      "id": 14,
+      "date": "2026-05-01",
+      "title": "Labour Day - Holiday",
+      "type": "holiday",
+      "description": "National holiday",
+      "category": "holiday"
+    },
+    {
+      "id": 15,
+      "date": "2026-05-10",
+      "title": "Viva Day - Programming",
+      "type": "viva",
+      "description": "Viva voce examination for Programming students",
+      "category": "examination"
+    },
+    {
+      "id": 16,
+      "date": "2026-05-20",
+      "title": "Revision Day - DCA",
+      "type": "revision",
+      "description": "Revision session for DCA batch",
+      "category": "academic"
+    },
+    {
+      "id": 17,
+      "date": "2026-06-05",
+      "title": "Practical Exam - ADCA",
+      "type": "exam",
+      "description": "Practical examination for ADCA students",
+      "category": "examination"
+    },
+    {
+      "id": 18,
+      "date": "2026-06-15",
+      "title": "Viva Day - MS Office",
+      "type": "viva",
+      "description": "Viva voce examination for MS Office students",
+      "category": "examination"
+    },
+    {
+      "id": 19,
+      "date": "2026-06-25",
+      "title": "Revision Day - Web Designing",
+      "type": "revision",
+      "description": "Revision session for Web Designing batch",
+      "category": "academic"
+    },
+    {
+      "id": 20,
+      "date": "2026-07-10",
+      "title": "Viva Day - Tally",
+      "type": "viva",
+      "description": "Viva voce examination for Tally students",
+      "category": "examination"
+    },
+    {
+      "id": 21,
+      "date": "2026-07-20",
+      "title": "Revision Day - Graphics Designing",
+      "type": "revision",
+      "description": "Revision session for Graphics Designing batch",
+      "category": "academic"
+    },
+    {
+      "id": 22,
+      "date": "2026-08-15",
+      "title": "Independence Day - Holiday",
+      "type": "holiday",
+      "description": "National holiday",
+      "category": "holiday"
+    },
+    {
+      "id": 23,
+      "date": "2026-08-20",
+      "title": "Viva Day - App Development",
+      "type": "viva",
+      "description": "Viva voce examination for App Development students",
+      "category": "examination"
+    },
+    {
+      "id": 24,
+      "date": "2026-08-25",
+      "title": "Revision Day - Programming",
+      "type": "revision",
+      "description": "Revision session for Programming batch",
+      "category": "academic"
+    },
+    {
+      "id": 25,
+      "date": "2026-09-05",
+      "title": "Theory Exam - ADCA",
+      "type": "exam",
+      "description": "Theory examination for ADCA students",
+      "category": "examination"
+    },
+    {
+      "id": 26,
+      "date": "2026-09-15",
+      "title": "Viva Day - DCA",
+      "type": "viva",
+      "description": "Viva voce examination for DCA students",
+      "category": "examination"
+    },
+    {
+      "id": 27,
+      "date": "2026-09-25",
+      "title": "Revision Day - MS Office",
+      "type": "revision",
+      "description": "Revision session for MS Office batch",
+      "category": "academic"
+    },
+    {
+      "id": 28,
+      "date": "2026-10-02",
+      "title": "Gandhi Jayanti - Holiday",
+      "type": "holiday",
+      "description": "National holiday",
+      "category": "holiday"
+    },
+    {
+      "id": 29,
+      "date": "2026-10-10",
+      "title": "Viva Day - Web Designing",
+      "type": "viva",
+      "description": "Viva voce examination for Web Designing students",
+      "category": "examination"
+    },
+    {
+      "id": 30,
+      "date": "2026-10-20",
+      "title": "Revision Day - Tally",
+      "type": "revision",
+      "description": "Revision session for Tally batch",
+      "category": "academic"
+    },
+    {
+      "id": 31,
+      "date": "2026-10-25",
+      "title": "Practical Exam - Graphics Designing",
+      "type": "exam",
+      "description": "Practical examination for Graphics Designing students",
+      "category": "examination"
+    },
+    {
+      "id": 32,
+      "date": "2026-11-10",
+      "title": "Viva Day - App Development",
+      "type": "viva",
+      "description": "Viva voce examination for App Development students",
+      "category": "examination"
+    },
+    {
+      "id": 33,
+      "date": "2026-11-15",
+      "title": "Revision Day - Programming",
+      "type": "revision",
+      "description": "Revision session for Programming batch",
+      "category": "academic"
+    },
+    {
+      "id": 34,
+      "date": "2026-11-20",
+      "title": "Diwali - Holiday",
+      "type": "holiday",
+      "description": "Festival holiday",
+      "category": "holiday"
+    },
+    {
+      "id": 35,
+      "date": "2026-12-10",
+      "title": "Viva Day - DCA",
+      "type": "viva",
+      "description": "Viva voce examination for DCA students",
+      "category": "examination"
+    },
+    {
+      "id": 36,
+      "date": "2026-12-20",
+      "title": "Revision Day - ADCA",
+      "type": "revision",
+      "description": "Revision session for ADCA batch",
+      "category": "academic"
+    },
+    {
+      "id": 37,
+      "date": "2026-12-25",
+      "title": "Christmas - Holiday",
+      "type": "holiday",
+      "description": "Festival holiday",
+      "category": "holiday"
+    },
+    {
+      "id": 38,
+      "date": "2026-12-31",
+      "title": "New Year's Eve - Holiday",
+      "type": "holiday",
+      "description": "Year-end holiday",
+      "category": "holiday"
+    }
+  ]
+}
+

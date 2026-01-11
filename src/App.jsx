@@ -15,6 +15,8 @@ import PrivacyPolicy from './components/legal/PrivacyContainter';
 import StudentIDEntry from './components/student/StudentIDEntry';
 import Results from './components/results/Results';
 import Scholarship from './components/scholarship/Scholarship';
+import AcademicCalendar from './components/calendar/AcademicCalendar';
+import TopPerformersPage from './components/topPerformers/TopPerformersPage';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path='/student-id-entry' element={<StudentIDEntry />} />
           <Route path='/results' element={<Results />} />
           <Route path='/scholarship' element={<Scholarship />} />
+          <Route path='/calendar' element={<AcademicCalendar />} />
+          <Route path='/top-performers' element={<TopPerformersPage />} />
         </Routes>
         <Footer />
       </Router>
