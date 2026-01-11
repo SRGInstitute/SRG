@@ -1,8 +1,10 @@
-/*--------head------------*/
 .head {
   padding: 20px 0;
   color: #fff;
+  position: relative;
+  z-index: 52;
 }
+
 .logo h1 {
   font-size: 21px;
   font-weight: 700;
@@ -12,33 +14,60 @@
 .logo img {
   width: 150px;
 }
+
 .head .icon {
   margin-left: 10px;
 }
+
+.head .container {
+  align-items: center;
+}
+
+.tagline {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  flex: 1;
+}
+
 /*--------head------------*/
 /*--------header------------*/
 header {
   background-color: rgba(255, 255, 255, 0.2);
   margin: 0 30px;
+  position: relative;
+  z-index: 50;
 }
+
 header .nav {
   display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
+
 header li {
   margin-right: 40px;
 }
+
 header ul {
   padding: 30px 20px;
+  flex-wrap: wrap;
 }
+
 header ul li a {
   color: #fff;
   font-weight: 500;
   transition: 0.5s;
   font-size: 18px;
+  white-space: nowrap;
 }
+
 header ul li a:hover {
   color: #eceae9;
 }
+
 .start {
   font-size: 24px;
   font-weight: 700;
@@ -46,16 +75,21 @@ header ul li a:hover {
   padding: 30px 70px;
   color: #fff;
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
+
 .toggle {
   display: none;
 }
 
 /* Highlight external link */
 nav ul li a.external-link {
-  color: #ff6347; /* Example: Tomato color */
+  color: #ff6347;
+  /* Example: Tomato color */
   font-weight: bold;
-  background-color: #f0f8ff; /* Light background */
+  background-color: #f0f8ff;
+  /* Light background */
   padding: 5px 10px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -67,22 +101,157 @@ nav ul li a.external-link:hover {
   background-color: #ff6347;
   transform: scale(1.1);
 }
+
+/* Scholarship navigation link styling */
+nav ul li a.scholarship-nav-link {
+  color: #fff;
+  font-weight: 600;
+  background-color: rgba(243, 101, 35, 0.2);
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(243, 101, 35, 0.5);
+  transition: all 0.3s ease;
+}
+
+nav ul li a.scholarship-nav-link:hover {
+  color: #ffffff;
+  background-color: #f36523;
+  border-color: #f36523;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(243, 101, 35, 0.3);
+}
+
 /*--------header------------*/
-@media screen and (max-width: 768px) {
+
+/* 14" and 15" Laptop screens (900px - 1366px) */
+@media screen and (min-width: 900px) and (max-width: 1366px) {
+  .head {
+    padding: 15px 0;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 130px;
+  }
+
+  .tagline {
+    font-size: 18px;
+  }
+
+  header {
+    margin: 0 15px;
+  }
+
+  header ul {
+    padding: 20px 12px;
+    flex-wrap: wrap;
+  }
+
+  header li {
+    margin-right: 12px;
+  }
+
+  header ul li a {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+
+  nav ul li a.scholarship-nav-link {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+
+  .start {
+    padding: 20px 35px;
+    font-size: 16px;
+  }
+}
+
+/* Specific fix for 930px - 950px range (common browser width) */
+@media screen and (min-width: 930px) and (max-width: 950px) {
+  header {
+    margin: 0 10px;
+  }
+
+  header ul {
+    padding: 20px 10px;
+  }
+
+  header li {
+    margin-right: 12px;
+  }
+
+  header ul li a {
+    font-size: 14px;
+    padding: 5px 6px;
+  }
+
+  nav ul li a.scholarship-nav-link {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+
+  .start {
+    padding: 20px 35px;
+    font-size: 17px;
+  }
+}
+
+/* Small laptop / Large tablet (768px - 899px) */
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  header {
+    margin: 0 10px;
+  }
+
+  header ul {
+    padding: 20px 10px;
+    flex-wrap: wrap;
+  }
+
+  header li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  header ul li a {
+    font-size: 15px;
+  }
+
+  .start {
+    padding: 20px 40px;
+    font-size: 18px;
+    clip-path: none;
+    margin-top: 10px;
+  }
+
+  nav.flexSB {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .start {
     clip-path: none;
   }
+
   header {
     margin: 0;
     background-color: #f36523;
     position: relative;
   }
+
   header ul.flexSB {
     display: none;
   }
+
   header ul li {
     margin-bottom: 20px;
   }
+
   .toggle {
     display: block;
     background: none;
@@ -92,6 +261,7 @@ nav ul li a.external-link:hover {
     right: 0;
     top: -20px;
   }
+
   .mobile-nav {
     position: absolute;
     top: 7vh;
@@ -99,4 +269,22 @@ nav ul li a.external-link:hover {
     width: 100%;
     background-color: #f36523;
   }
+}
+
+/* Dark Header for specific pages */
+.header-dark {
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-dark ul li a {
+  color: #333;
+}
+
+.header-dark ul li a:hover {
+  color: #f36523;
+}
+
+.header-dark .toggle {
+  color: #333;
 }

@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f8f8;
 }
+
 /*------------global-----------*/
 .container {
   max-width: 85%;
   margin: auto;
 }
+
 .flexSB {
   display: flex;
   justify-content: space-between;
 }
+
 .icon {
   width: 40px;
   height: 40px;
@@ -27,20 +32,25 @@ body {
   color: #f36523;
   transition: 0.5s;
 }
+
 .icon:hover {
   cursor: pointer;
   background-color: #f36523;
   color: #fff;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style-type: none;
 }
+
 .row {
   width: 50%;
 }
+
 button {
   padding: 17px 30px;
   background-color: #fff;
@@ -53,12 +63,15 @@ button {
   box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
   transition: 0.5s;
 }
+
 button i {
   margin-left: 20px;
 }
+
 button:hover {
   box-shadow: none;
 }
+
 .primary-btn {
   background-color: #f36523;
   color: #fff;
@@ -69,17 +82,20 @@ button:hover {
   text-align: center;
   padding: 40px 0;
 }
+
 #heading h3 {
   font-weight: 600;
   letter-spacing: 1px;
   color: #f36523;
   text-transform: uppercase;
 }
+
 #heading h1 {
   font-size: 45px;
   margin: 20px 0;
   text-transform: capitalize;
 }
+
 p {
   line-height: 30px;
   font-size: 18px;
@@ -94,8 +110,9 @@ p {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 100vh;
-  padding-top: 30%;
+  height: 50vh;
+  padding-top: 15%;
+  /* Adjusted padding for vertical centering */
   padding-right: 50px;
   color: #fff;
   text-align: center;
@@ -110,7 +127,8 @@ p {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 50vh; /* Adjust the height as needed */
+  height: 50vh;
+  /* Adjust the height as needed */
   padding-top: 30%;
   padding-right: 50px;
   color: #fff;
@@ -122,31 +140,37 @@ p {
   font-size: 100px;
   font-weight: 400;
 }
+
 .back h2 {
   font-weight: 500;
   font-size: 17px;
   text-transform: uppercase;
 }
+
 .margin {
-  margin-top: 40.3%;
+  margin-top: 35vh;
 }
 
 .marginV2 {
   margin-top: 11.3%;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
 }
+
 .flex {
   display: flex;
 }
+
 .grid2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
+
 .outline-btn {
   margin: 0;
   box-shadow: none;
@@ -154,31 +178,38 @@ p {
   width: 100%;
   transition: 0.5s;
 }
+
 .outline-btn:hover {
   background-color: #1eb2a6;
   color: #fff;
 }
+
 .grid3 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
 }
+
 .padding {
   padding: 80px 0;
 }
+
 .shadow {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
 }
+
 @media screen and (max-width: 768px) {
+
   .grid2,
   .grid3,
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .back {
     background-position: center;
-    padding-top: 50%;
-    height: 80vh;
+    padding-top: 25%;
+    height: 40vh;
   }
 }

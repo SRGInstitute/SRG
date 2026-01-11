@@ -13,7 +13,7 @@ const Head = () => {
             </li>
           </div>
 
-          <div class='tagline'>कंप्यूटर के साथ सपनो की उड़ान</div>
+          <div className='tagline'>कंप्यूटर के साथ सपनो की उड़ान</div>
 
           <div className='social'>
             <a
