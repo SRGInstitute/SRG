@@ -1,0 +1,274 @@
+.scholarship-policy-content {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
+}
+
+.policy-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #0A2342;
+}
+
+.policy-header h1 {
+  font-size: 1.8rem;
+  color: #0A2342;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.policy-header h2 {
+  font-size: 1.4rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.policy-year {
+  font-size: 1.2rem;
+  color: #666666;
+  font-weight: 500;
+}
+
+.section {
+  margin-top: 2.5rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  color: #0A2342;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  margin: 0.75rem 0;
+  color: #333333;
+}
+
+.section ul,
+.section ol {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  color: #333333;
+}
+
+.section ul li,
+.section ol li {
+  margin: 0.5rem 0;
+  line-height: 1.7;
+}
+
+.subsection {
+  margin-top: 1.5rem;
+}
+
+.subsection h3 {
+  font-size: 1.25rem;
+  color: #0A2342;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.subsection h4 {
+  font-size: 1.1rem;
+  color: #333333;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.group-detail {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-left: 4px solid #0A2342;
+  border-radius: 4px;
+}
+
+.group-detail h4 {
+  color: #0A2342;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.group-detail p {
+  margin: 0.5rem 0;
+}
+
+.note {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  border-radius: 4px;
+  color: #856404;
+}
+
+.formula-box {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: #f0f4f8;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.formula-box h3 {
+  margin-bottom: 0.75rem;
+  color: #0A2342;
+}
+
+.formula {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0A2342;
+  font-family: 'Courier New', monospace;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table thead {
+  background: #0A2342;
+  color: white;
+}
+
+table thead th {
+  font-weight: 600;
+  text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background: #e9ecef;
+}
+
+.policy-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+  text-align: center;
+}
+
+.policy-footer p {
+  margin: 0.5rem 0;
+  color: #666666;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #0A2342;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.section a {
+  color: #0A2342;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .scholarship-policy-content {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .policy-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .policy-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .section h2 {
+    font-size: 1.25rem;
+  }
+
+  .subsection h3 {
+    font-size: 1.1rem;
+  }
+
+  .subsection h4 {
+    font-size: 1rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+
+  .formula {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .policy-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .policy-header h2 {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.1rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+

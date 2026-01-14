@@ -15,6 +15,7 @@ import PrivacyPolicy from './components/legal/PrivacyContainter';
 import StudentIDEntry from './components/student/StudentIDEntry';
 import Results from './components/results/Results';
 import Scholarship from './components/scholarship/Scholarship';
+import ScholarshipPolicy from './components/scholarship/ScholarshipPolicy';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path='/student-id-entry' element={<StudentIDEntry />} />
           <Route path='/results' element={<Results />} />
           <Route path='/scholarship' element={<Scholarship />} />
+          <Route path='/scholarship-policy' element={<ScholarshipPolicy />} />
         </Routes>
         <Footer />
       </Router>

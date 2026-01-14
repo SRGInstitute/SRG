@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Back from '../common/back/Back';
 import './scholarship.css';
 
@@ -22,6 +23,7 @@ const Scholarship = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [policyAccepted, setPolicyAccepted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,6 +35,12 @@ const Scholarship = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    if (!policyAccepted) {
+      alert('Please accept the Scholarship Test Policy & Examination Rules to proceed.');
+      return;
+    }
+    
     setIsSubmitting(true);
     setSubmitStatus(null);
 
@@ -69,6 +77,7 @@ const Scholarship = () => {
         percentage: '',
         additionalInfo: ''
       });
+      setPolicyAccepted(false);
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
@@ -146,6 +155,11 @@ const Scholarship = () => {
               Register now for the Scholarship Test 2026 and get a chance to win a FREE DCA Course!
               Fill out the form below to complete your registration.
             </p>
+            <div className='policy-link-container'>
+              <Link to='/scholarship-policy' className='policy-link'>
+                <i className='fa fa-file-alt'></i> View Scholarship Test Policy & Examination Rules 2026
+              </Link>
+            </div>
           </div>
 
           {submitStatus === 'success' && (
@@ -362,6 +376,25 @@ const Scholarship = () => {
               <p><strong>Note:</strong> The test will be based on General Awareness (MCQ format, 1 hour duration).
                 Test Date: <strong>18th January 2026</strong></p>
               <p>Top 3 Girls and Top 3 Boys will receive a <strong>FREE DCA Course</strong>!</p>
+            </div>
+
+            <div className='policy-acceptance'>
+              <label className='policy-checkbox-label'>
+                <input
+                  type='checkbox'
+                  checked={policyAccepted}
+                  onChange={(e) => setPolicyAccepted(e.target.checked)}
+                  required
+                  className='policy-checkbox'
+                />
+                <span className='policy-checkbox-text'>
+                  I have read and agree to the{' '}
+                  <Link to='/scholarship-policy' target='_blank' className='policy-link-inline'>
+                    Scholarship Test Policy & Examination Rules 2026
+                  </Link>
+                  <span className='required-asterisk'>*</span>
+                </span>
+              </label>
             </div>
 
             <div className='form-actions'>
