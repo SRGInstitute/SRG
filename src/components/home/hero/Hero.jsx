@@ -8,7 +8,7 @@ const Hero = () => {
 
   const handleScholarshipClick = (e) => {
     e.preventDefault();
-    navigate('/scholarship');
+    navigate('/scholarship-result');
   };
 
   return (
@@ -37,7 +37,7 @@ const Hero = () => {
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
                   e.preventDefault();
-                  navigate('/scholarship');
+                  navigate('/scholarship-result');
                 }
               }}
             >
@@ -48,13 +48,13 @@ const Hero = () => {
                       <i className='fa fa-graduation-cap'></i>
                     </div>
                     <div className='banner-text'>
-                      <h3>Scholarship Program Available!</h3>
-                      <p>Apply now for financial assistance and make your education dreams come true</p>
+                      <h3>Scholarship Result Out!</h3>
+                      <p>Check your scholarship result using registration number and mobile number</p>
                     </div>
                   </div>
                   <div className='banner-right'>
                     <span className='scholarship-btn'>
-                      Apply for Scholarship <i className='fa fa-arrow-right'></i>
+                      Check Now <i className='fa fa-arrow-right'></i>
                     </span>
                   </div>
                 </div>

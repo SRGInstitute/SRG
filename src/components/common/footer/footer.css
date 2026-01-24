@@ -1,5 +1,5 @@
 .newletter {
-  background-color: #f36523;
+  background: linear-gradient(135deg, #0d3d5f 0%, #1a4d7a 100%);
   padding: 50px 0;
   color: #fff;
 }
@@ -27,7 +27,7 @@
 }
 .newletter i {
   padding: 12px;
-  color: #f36523;
+  color: #0d3d5f;
   background-color: #fff;
 }
 footer {

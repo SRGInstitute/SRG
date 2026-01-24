@@ -53,8 +53,18 @@ const Header = () => {
                 Certificate
               </a>
             </li> */}
-            <li>
-              <Link to='/results'>Results</Link>
+            <li className='nav-dropdown'>
+              <span className='dropdown-toggle'>
+                Results <i className='fa fa-caret-down'></i>
+              </span>
+              <ul className='dropdown-menu'>
+                <li>
+                  <Link to='/scholarship-result'>Scholarship Result</Link>
+                </li>
+                <li>
+                  <Link to='/results'>Test Result</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link to='/contact'>Contact</Link>
