@@ -15,9 +15,13 @@ const ScholarshipResultDisplay = () => {
   const getScoreParts = (value) => {
     const raw = (value || '').toString();
     const parts = raw.split('|').map((part) => part.trim()).filter(Boolean);
+    const score = parts[0] || raw;
+    const scholarshipStatus = parts[1] || '';
+    const hasEligible = raw.toLowerCase().includes('eligible');
     return {
-      score: parts[0] || raw,
-      scholarshipStatus: parts[1] || ''
+      score: score,
+      scholarshipStatus: scholarshipStatus,
+      hasEligible: hasEligible
     };
   };
 
@@ -137,7 +141,9 @@ const ScholarshipResultDisplay = () => {
               <div className='metric-label'>Total Marks</div>
             </div>
             <div className='metric-item'>
-              <div className='metric-value green'>{scoreParts.score}</div>
+              <div className={`metric-value ${scoreParts.hasEligible ? 'green' : 'red'}`}>
+                {scoreParts.score}
+              </div>
               <div className='metric-label'>Obtained Marks</div>
             </div>
             <div className='metric-item'>
@@ -154,7 +160,9 @@ const ScholarshipResultDisplay = () => {
           <div className='status-cards'>
             <div className='status-card scholarship-card'>
               <div className='status-label'>Scholarship Status</div>
-              <div className='status-value purple'>{scoreParts.scholarshipStatus}</div>
+              <div className={`status-value ${scoreParts.hasEligible ? 'green' : 'red'}`}>
+                {scoreParts.scholarshipStatus}
+              </div>
             </div>
           </div>
         )}
