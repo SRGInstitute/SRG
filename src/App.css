@@ -155,6 +155,37 @@ p {
   margin-top: 11.3%;
 }
 
+.backPlain {
+  background: linear-gradient(135deg, #9DC8D1 0%, #76AAB6 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 45vh;
+  padding-top: 18%;
+  padding-right: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.backPlain h1 {
+  font-size: 100px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.backPlain h2 {
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.marginPlain {
+  margin-top: 35vh;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Head from './Head';
 import './header.css';
 
 const Header = () => {
   const [click, setClick] = useState(false);
+  const location = useLocation();
+  const isScholarshipDisplay = location.pathname === '/scholarship-result/display';
 
   return (
     <>
-      <Head />
-      <header>
+      <Head isScholarshipDisplay={isScholarshipDisplay} />
+      <header className={isScholarshipDisplay ? 'scholarship-display-header' : ''}>
         <nav className='flexSB'>
           <ul
             className={click ? 'mobile-nav' : 'flexSB '}
@@ -53,8 +55,18 @@ const Header = () => {
                 Certificate
               </a>
             </li> */}
-            <li>
-              <Link to='/results'>Results</Link>
+            <li className='nav-dropdown'>
+              <span className='dropdown-toggle'>
+                Results <i className='fa fa-caret-down'></i>
+              </span>
+              <ul className='dropdown-menu'>
+                <li>
+                  <Link to='/scholarship-result'>Scholarship Result</Link>
+                </li>
+                <li>
+                  <Link to='/results'>Test Result</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link to='/contact'>Contact</Link>
