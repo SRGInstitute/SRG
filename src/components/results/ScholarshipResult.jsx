@@ -108,6 +108,9 @@ const ScholarshipResult = () => {
       const data = await response.json();
 
       if (data.success && data.result) {
+        // Debug: Log the API response to see if totalMarks is included
+        console.log('API Response:', data);
+        console.log('TotalMarks from API:', data.result.totalMarks);
         setResult(data.result);
         setShowSuccess(true);
         setTimeout(() => {

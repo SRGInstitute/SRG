@@ -189,6 +189,10 @@
   color: #6c5ce7;
 }
 
+.metric-value.red {
+  color: #e74c3c;
+}
+
 .metric-label {
   font-size: 14px;
   color: #636e72;
@@ -236,6 +240,14 @@
 
 .status-value.purple {
   color: #6c5ce7;
+}
+
+.status-value.green {
+  color: #00b894;
+}
+
+.status-value.red {
+  color: #e74c3c;
 }
 
 .answer-sheet-actions {
@@ -400,12 +412,24 @@
     color: #00b894 !important;
   }
 
+  .metric-value.red {
+    color: #e74c3c !important;
+  }
+
   .metric-value.purple {
     color: #6c5ce7 !important;
   }
 
   .status-value.blue {
     color: #0984e3 !important;
+  }
+
+  .status-value.green {
+    color: #00b894 !important;
+  }
+
+  .status-value.red {
+    color: #e74c3c !important;
   }
 
   .status-value.purple {

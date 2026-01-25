@@ -15,9 +15,15 @@ const ScholarshipResultDisplay = () => {
   const getScoreParts = (value) => {
     const raw = (value || '').toString();
     const parts = raw.split('|').map((part) => part.trim()).filter(Boolean);
+    const score = parts[0] || raw;
+    const scholarshipStatus = parts[1] || '';
+    const totalMarks = parts[2] || ''; // Third part is total marks
+    const hasEligible = raw.toLowerCase().includes('eligible');
     return {
-      score: parts[0] || raw,
-      scholarshipStatus: parts[1] || ''
+      score: score,
+      scholarshipStatus: scholarshipStatus,
+      totalMarks: totalMarks,
+      hasEligible: hasEligible
     };
   };
 
@@ -87,6 +93,10 @@ const ScholarshipResultDisplay = () => {
   
   const formattedDateOfBirth = formatDateOfBirth(result.dateOfBirth);
 
+  // Debug: Log the result to see what's being received
+  console.log('Scholarship Result Data:', result);
+  console.log('Total Marks from API:', result.totalMarks, 'Type:', typeof result.totalMarks);
+
   return (
     <div className='result-display-page'>
       <div className='result-container'>
@@ -133,16 +143,35 @@ const ScholarshipResultDisplay = () => {
           <h3>Exam Performance</h3>
           <div className='performance-metrics'>
             <div className='metric-item'>
-              <div className='metric-value blue'>100</div>
+              <div className='metric-value blue'>
+                {scoreParts.totalMarks && scoreParts.totalMarks.toString().trim() !== '' 
+                  ? scoreParts.totalMarks 
+                  : (result.totalMarks && result.totalMarks.toString().trim() !== '' 
+                      ? result.totalMarks 
+                      : '100')}
+              </div>
               <div className='metric-label'>Total Marks</div>
             </div>
             <div className='metric-item'>
-              <div className='metric-value green'>{scoreParts.score}</div>
+              <div className={`metric-value ${scoreParts.hasEligible ? 'green' : 'red'}`}>
+                {scoreParts.score}
+              </div>
               <div className='metric-label'>Obtained Marks</div>
             </div>
             <div className='metric-item'>
               <div className='metric-value blue'>
-                {((parseFloat(scoreParts.score) / 100) * 100).toFixed(2)}%
+                {(() => {
+                  // Priority: scoreParts.totalMarks (from pipe) > result.totalMarks (from API) > default 100
+                  const totalMarksValue = scoreParts.totalMarks && scoreParts.totalMarks.toString().trim() !== '' 
+                    ? scoreParts.totalMarks 
+                    : (result.totalMarks && result.totalMarks.toString().trim() !== '' 
+                        ? result.totalMarks 
+                        : null);
+                  const totalMarks = totalMarksValue ? parseFloat(totalMarksValue) : 100;
+                  const obtainedMarks = parseFloat(scoreParts.score) || 0;
+                  if (totalMarks === 0) return '0.00%';
+                  return ((obtainedMarks / totalMarks) * 100).toFixed(2) + '%';
+                })()}
               </div>
               <div className='metric-label'>Percentage</div>
             </div>
@@ -154,7 +183,9 @@ const ScholarshipResultDisplay = () => {
           <div className='status-cards'>
             <div className='status-card scholarship-card'>
               <div className='status-label'>Scholarship Status</div>
-              <div className='status-value purple'>{scoreParts.scholarshipStatus}</div>
+              <div className={`status-value ${scoreParts.hasEligible ? 'green' : 'red'}`}>
+                {scoreParts.scholarshipStatus}
+              </div>
             </div>
           </div>
         )}
