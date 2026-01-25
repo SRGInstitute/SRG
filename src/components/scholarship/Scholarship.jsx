@@ -46,7 +46,7 @@ const Scholarship = () => {
 
     try {
       // Google Apps Script Web App URL - Replace with your deployed script URL
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbz5Jfqv0CNq8UMAeDVYBsKfpN2ryuzUzWaWTr4A5NMKGpbkOWjKpDGkOYZFqiu15kHBlg/exec';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxZPOjeRcsb-J8hie9_ALoXrh_rhWYy7tKjE9U3b1PZWGC0JVIT4jBIGge__dwTOgtc/exec';
 
       const response = await fetch(scriptURL, {
         method: 'POST',
