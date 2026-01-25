@@ -420,53 +420,211 @@ header.scholarship-display-header nav ul li a.scholarship-nav-link:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .head {
+    padding: 15px 0;
+  }
+
+  .head .container {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 15px;
+  }
+
+  .logo {
+    flex: 0 0 auto;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .tagline {
+    font-size: 14px;
+    flex: 1 1 100%;
+    order: 3;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .social {
+    display: flex;
+    gap: 8px;
+    flex: 0 0 auto;
+    order: 2;
+  }
+
+  .social .icon {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .head.scholarship-display-head .tagline {
+    color: #fff;
+  }
+
   .start {
     clip-path: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    order: 2;
   }
 
   header {
     margin: 0;
     background-color: #f36523;
     position: relative;
+    border-radius: 0;
+  }
+
+  header.scholarship-display-header {
+    background-color: #f36523;
+  }
+
+  nav.flexSB {
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 12px 15px;
+    position: relative;
+    gap: 10px;
+  }
+
+  .start {
+    order: 1;
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .start a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   header ul.flexSB {
     display: none;
   }
 
-  header ul li {
-    margin-bottom: 20px;
+  .mobile-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f36523;
+    z-index: 100;
+    padding: 20px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .mobile-nav li {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .mobile-nav li a {
+    display: block;
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .mobile-nav li:last-child a {
+    border-bottom: none;
   }
 
   .toggle {
     display: block;
     background: none;
+    border: none;
     color: #fff;
-    font-size: 30px;
-    position: absolute;
-    right: 0;
-    top: -20px;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 8px;
+    order: 3;
+    margin-left: auto;
   }
 
-  .mobile-nav {
-    position: absolute;
-    top: 7vh;
-    left: 0;
-    width: 100%;
-    background-color: #f36523;
+  .toggle:hover {
+    opacity: 0.8;
+  }
+
+  .nav-dropdown .dropdown-toggle {
+    color: #fff;
+    padding: 12px 15px;
+    display: block;
   }
 
   .nav-dropdown .dropdown-menu {
     position: static;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.2);
     border: none;
     box-shadow: none;
-    padding: 0;
+    padding: 10px 0 10px 20px;
     display: block;
+    margin-top: 5px;
+  }
+
+  .nav-dropdown .dropdown-menu li {
+    margin-bottom: 10px;
   }
 
   .nav-dropdown .dropdown-menu li a {
-    padding-left: 0;
+    padding: 8px 15px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+  }
+
+  header.scholarship-display-header .mobile-nav li a {
+    color: #fff;
+  }
+
+  header.scholarship-display-header .mobile-nav .nav-dropdown .dropdown-toggle {
+    color: #fff;
+  }
+
+  /* Mobile button styles */
+  .mobile-nav li a.external-link,
+  .mobile-nav li a.scholarship-nav-link {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  /* Fix for very small screens */
+  @media screen and (max-width: 480px) {
+    .logo img {
+      width: 100px;
+    }
+
+    .tagline {
+      font-size: 12px;
+    }
+
+    .start {
+      padding: 12px 15px;
+      font-size: 14px;
+    }
+
+    .toggle {
+      font-size: 24px;
+      padding: 5px;
+    }
+
+    .mobile-nav {
+      padding: 15px 10px;
+    }
+
+    .mobile-nav li a {
+      font-size: 15px;
+      padding: 10px 12px;
+    }
   }
 }
 

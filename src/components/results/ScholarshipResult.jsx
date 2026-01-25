@@ -32,9 +32,6 @@ const ScholarshipResult = () => {
     if (!formData.registrationNumber.trim()) {
       newErrors.registrationNumber = 'Registration number is required';
     }
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
-    }
     if (!formData.mobileNumber.trim()) {
       newErrors.mobileNumber = 'Mobile number is required';
     }
@@ -88,7 +85,7 @@ const ScholarshipResult = () => {
 
     try {
       // Google Apps Script Web App URL - Replace with your deployed script URL
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbz6tBsPftAUs8V5LueIK6UEonjbbrGA6Gl-zJWM4uUu0KTqXANSnGwaFraTibc6G3Gx/exec';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxql_ay1SPUdcZQO1fZnG4gdTMIL0U1_TLtsPOcM1FaihPQZYm_EBmmW6ROHQkws3pY/exec';
 
       if (!scriptURL) {
         setMessage('Please configure the Google Apps Script URL.');
@@ -100,8 +97,6 @@ const ScholarshipResult = () => {
         registrationNumber: formData.registrationNumber.trim(),
         name: formData.name.trim(),
         mobileNumber: formData.mobileNumber.trim(),
-        className: formData.className.trim(),
-        fatherName: formData.fatherName.trim(),
         dateOfBirth: formData.dateOfBirth.trim()
       });
 
@@ -139,8 +134,8 @@ const ScholarshipResult = () => {
             <div className='result-header'>
               <h2>Scholarship Result Out</h2>
               <p>
-                Enter your registration number, name, and mobile number to check
-                your result. Other fields are optional.
+                Registration number and mobile number are required.
+                Name and date of birth are optional.
               </p>
             </div>
 
@@ -161,7 +156,7 @@ const ScholarshipResult = () => {
                 </div>
 
                 <div className='form-group'>
-                  <label>Name *</label>
+                  <label>Name (Optional)</label>
                   <input
                     type='text'
                     name='name'
@@ -169,7 +164,6 @@ const ScholarshipResult = () => {
                     onChange={handleChange}
                     placeholder='Full name'
                   />
-                  {errors.name && <span className='error-text'>{errors.name}</span>}
                 </div>
 
                 <div className='form-group'>
@@ -184,28 +178,6 @@ const ScholarshipResult = () => {
                   {errors.mobileNumber && (
                     <span className='error-text'>{errors.mobileNumber}</span>
                   )}
-                </div>
-
-                <div className='form-group'>
-                  <label>Class (Optional)</label>
-                  <input
-                    type='text'
-                    name='className'
-                    value={formData.className}
-                    onChange={handleChange}
-                    placeholder='4th, 5th, 6th...'
-                  />
-                </div>
-
-                <div className='form-group'>
-                  <label>Father&apos;s Name (Optional)</label>
-                  <input
-                    type='text'
-                    name='fatherName'
-                    value={formData.fatherName}
-                    onChange={handleChange}
-                    placeholder='Father name'
-                  />
                 </div>
 
                 <div className='form-group'>
