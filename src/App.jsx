@@ -17,6 +17,7 @@ import Results from './components/results/Results';
 import ScholarshipPolicy from './components/scholarship/ScholarshipPolicy';
 import ScholarshipResult from './components/results/ScholarshipResult';
 import ScholarshipResultView from './components/results/ScholarshipResultView';
+import ScholarshipResultDisplay from './components/results/ScholarshipResultDisplay';
 import ScholarshipClosed from './components/scholarship/ScholarshipClosed';
 
 const AppLayout = () => {
@@ -41,6 +42,7 @@ const AppLayout = () => {
         <Route path='/results' element={<Results />} />
         <Route path='/scholarship-policy' element={<ScholarshipPolicy />} />
         <Route path='/scholarship-result' element={<ScholarshipResult />} />
+        <Route path='/scholarship-result/display' element={<ScholarshipResultDisplay />} />
         <Route path='/scholarship-result/view' element={<ScholarshipResultView />} />
         <Route path='/scholarship' element={<ScholarshipClosed />} />
       </Routes>

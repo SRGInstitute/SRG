@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Head = () => {
+const Head = ({ isScholarshipDisplay = false }) => {
   return (
     <>
-      <section className='head'>
+      <section className={`head ${isScholarshipDisplay ? 'scholarship-display-head' : ''}`}>
         <div className='container flexSB'>
           <div className='logo'>
             <li>
               <a href='https://srgeducation.in'>
-                <img src='./images/srg-logo.png' alt='SRG Logo' />
+                <img src='/images/srg-logo.png' alt='SRG Logo' />
               </a>
             </li>
           </div>

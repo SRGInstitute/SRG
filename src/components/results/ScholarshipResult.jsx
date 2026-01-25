@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import Back from '../common/back/Back';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import BackPlain from '../common/back/BackPlain';
 import './ScholarshipResult.css';
 
 const ScholarshipResult = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     registrationNumber: '',
     name: '',
@@ -15,7 +17,6 @@ const ScholarshipResult = () => {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [message, setMessage] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
   const handleChange = (e) => {
@@ -116,7 +117,7 @@ const ScholarshipResult = () => {
         setShowSuccess(true);
         setTimeout(() => {
           setShowSuccess(false);
-          setIsModalOpen(true);
+          navigate('/scholarship-result/display', { state: { result: data.result } });
         }, 900);
       } else {
         setMessage(data.message || 'Result not found. Please check your details.');
@@ -128,37 +129,10 @@ const ScholarshipResult = () => {
     }
   };
 
-  useEffect(() => {
-    if (isModalOpen) {
-      document.body.classList.add('modal-open');
-    } else {
-      document.body.classList.remove('modal-open');
-    }
-    return () => document.body.classList.remove('modal-open');
-  }, [isModalOpen]);
-
-  const handleViewAnswerSheet = () => {
-    if (!result || !result.copyLink) return;
-    const viewUrl = getFullViewUrl(result.copyLink);
-    if (!viewUrl) {
-      setMessage('Answer sheet link is invalid or missing.');
-      return;
-    }
-    window.open(viewUrl, '_blank', 'noopener,noreferrer');
-  };
-
-  const getScoreParts = (value) => {
-    const raw = (value || '').toString();
-    const parts = raw.split('|').map((part) => part.trim()).filter(Boolean);
-    return {
-      score: parts[0] || raw,
-      note: parts[1] || ''
-    };
-  };
 
   return (
     <>
-      <Back title='Scholarship Result' />
+      <BackPlain title='Scholarship Result' />
       <section className='scholarship-result'>
         <div className='container'>
           <div className='result-card'>
@@ -269,57 +243,6 @@ const ScholarshipResult = () => {
               </div>
             )}
 
-            {result && isModalOpen && (
-              <div className='result-modal-overlay' onClick={() => setIsModalOpen(false)}>
-                <div className='result-modal' onClick={(e) => e.stopPropagation()}>
-                  <div className='modal-header'>
-                    <div className='modal-title'>Result Details</div>
-                    <button className='modal-close' onClick={() => setIsModalOpen(false)}>
-                      <i className='fa fa-times'></i>
-                    </button>
-                  </div>
-
-                  <div className='result-output'>
-                    <div className='result-details'>
-                      <div><strong>Registration:</strong> {result.registrationNumber}</div>
-                      <div><strong>Name:</strong> {result.name}</div>
-                      <div><strong>Mobile:</strong> {result.mobileNumber}</div>
-                      {result.className && <div><strong>Class:</strong> {result.className}</div>}
-                      {result.fatherName && <div><strong>Father&apos;s Name:</strong> {result.fatherName}</div>}
-                      {result.dateOfBirth && <div><strong>Date of Birth:</strong> {result.dateOfBirth}</div>}
-                    </div>
-
-                    <div className='score-highlight score-bottom'>
-                      <span>Score</span>
-                      <strong>{getScoreParts(result.score).score}</strong>
-                    </div>
-                    {getScoreParts(result.score).note && (
-                      <div className='score-note'>{getScoreParts(result.score).note}</div>
-                    )}
-
-                    {result.copyLink && (
-                      <div className='result-preview'>
-                        <div className='result-actions'>
-                          <button className='primary-btn view-answer-btn' onClick={handleViewAnswerSheet}>
-                            View Answer Sheet
-                          </button>
-                          <button
-                            className='secondary-btn'
-                            type='button'
-                            onClick={() => {
-                              setIsModalOpen(false);
-                              setResult(null);
-                            }}
-                          >
-                            Check Another
-                          </button>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </section>

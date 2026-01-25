@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Head from './Head';
 import './header.css';
 
 const Header = () => {
   const [click, setClick] = useState(false);
+  const location = useLocation();
+  const isScholarshipDisplay = location.pathname === '/scholarship-result/display';
 
   return (
     <>
-      <Head />
-      <header>
+      <Head isScholarshipDisplay={isScholarshipDisplay} />
+      <header className={isScholarshipDisplay ? 'scholarship-display-header' : ''}>
         <nav className='flexSB'>
           <ul
             className={click ? 'mobile-nav' : 'flexSB '}
