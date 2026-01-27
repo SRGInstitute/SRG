@@ -116,6 +116,11 @@ body.modal-open {
   flex-direction: column;
 }
 
+/* Temporarily hide Name and Date of Birth fields */
+.result-form .form-group.hidden-field {
+  display: none;
+}
+
 .result-form label {
   font-size: 14px;
   font-weight: 600;

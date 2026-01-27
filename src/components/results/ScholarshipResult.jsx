@@ -138,7 +138,6 @@ const ScholarshipResult = () => {
               <h2>Scholarship Result Out</h2>
               <p>
                 Registration number and mobile number are required.
-                Name and date of birth are optional.
               </p>
             </div>
 
@@ -158,7 +157,7 @@ const ScholarshipResult = () => {
                   )}
                 </div>
 
-                <div className='form-group'>
+                <div className='form-group hidden-field'>
                   <label>Name (Optional)</label>
                   <input
                     type='text'
@@ -183,7 +182,7 @@ const ScholarshipResult = () => {
                   )}
                 </div>
 
-                <div className='form-group'>
+                <div className='form-group hidden-field'>
                   <label>Date of Birth (Optional)</label>
                   <input
                     type='text'
