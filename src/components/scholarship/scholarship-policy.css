@@ -1,240 +1,388 @@
+/* ============================================
+   Scholarship Policy Page Styles
+   Professional, Accessible Design
+   WCAG 4.5:1 Contrast Compliant
+   ============================================ */
+
+/* Main Container */
 .scholarship-policy-content {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 900px;
   margin: 2rem auto;
-  padding: 2rem;
-  background: #ffffff;
+  padding: 2.5rem;
+  background: #FFFFFF;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  line-height: 1.7;
+  color: #333333;
 }
 
+/* Policy Header */
 .policy-header {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   padding-bottom: 1.5rem;
-  border-bottom: 3px solid #0A2342;
+  border-bottom: 3px solid #111111;
 }
 
 .policy-header h1 {
-  font-size: 1.8rem;
-  color: #0A2342;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-size: 1.9rem;
+  color: #111111;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .policy-header h2 {
   font-size: 1.4rem;
-  color: #333333;
+  color: #111111;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .policy-year {
-  font-size: 1.2rem;
-  color: #666666;
+  font-size: 1.1rem;
+  color: #333333;
   font-weight: 500;
+  margin-top: 0.5rem;
 }
 
+/* Section Styling */
 .section {
   margin-top: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .section h2 {
-  font-size: 1.5rem;
-  color: #0A2342;
+  font-size: 1.6rem;
+  color: #111111;
   border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .section p {
-  margin: 0.75rem 0;
+  margin: 1rem 0;
   color: #333333;
+  line-height: 1.7;
 }
 
 .section ul,
 .section ol {
-  margin: 0.75rem 0;
-  padding-left: 1.5rem;
+  margin: 1rem 0;
+  padding-left: 2rem;
   color: #333333;
 }
 
 .section ul li,
 .section ol li {
-  margin: 0.5rem 0;
-  line-height: 1.7;
+  margin: 0.75rem 0;
+  line-height: 1.8;
+  color: #333333;
 }
 
+/* Subsection Styling */
 .subsection {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .subsection h3 {
-  font-size: 1.25rem;
-  color: #0A2342;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+  color: #111111;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .subsection h4 {
-  font-size: 1.1rem;
-  color: #333333;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  color: #111111;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
+/* Group Detail Boxes */
 .group-detail {
   margin: 1.5rem 0;
-  padding: 1rem;
-  background: #f8f9fa;
-  border-left: 4px solid #0A2342;
+  padding: 1.25rem;
+  background: #D0EFFF;
+  border-left: 4px solid #0066CC;
   border-radius: 4px;
 }
 
 .group-detail h4 {
-  color: #0A2342;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  color: #111111;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 
 .group-detail p {
   margin: 0.5rem 0;
+  color: #333333;
 }
 
+/* Note Boxes - Important Notes (Yellow) */
 .note {
-  margin-top: 1rem;
-  padding: 0.75rem;
-  background: #fff3cd;
-  border-left: 4px solid #ffc107;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
+  background: #FFF59D;
+  border-left: 4px solid #F9A825;
   border-radius: 4px;
-  color: #856404;
+  color: #5D4037;
+  font-weight: 500;
 }
 
+.note strong {
+  color: #3E2723;
+  font-weight: 700;
+}
+
+.note em {
+  color: #5D4037;
+  font-style: italic;
+}
+
+/* Highlighted Notes - Warnings/Cautions (Orange) */
+.note.highlight {
+  background: #FFE0B2;
+  border-left: 4px solid #FF9800;
+  color: #E65100;
+  font-weight: 500;
+}
+
+.note.highlight strong {
+  color: #BF360C;
+  font-weight: 700;
+}
+
+/* Formula Boxes - Neutral Emphasis (Light Blue) */
 .formula-box {
-  margin: 1.5rem 0;
+  margin: 1.75rem 0;
   padding: 1.5rem;
-  background: #f0f4f8;
+  background: #D0EFFF;
   border-radius: 8px;
-  text-align: center;
+  text-align: left;
+  border: 1px solid #B3D9FF;
 }
 
 .formula-box h3 {
+  margin-bottom: 1rem;
+  color: #111111;
+  text-align: center;
+  font-weight: 700;
+}
+
+.formula-box h4 {
+  color: #111111;
   margin-bottom: 0.75rem;
-  color: #0A2342;
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 
 .formula {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #0A2342;
-  font-family: 'Courier New', monospace;
-  padding: 0.5rem;
-  background: white;
+  color: #111111;
+  font-family: 'Courier New', 'Consolas', monospace;
+  padding: 1rem;
+  background: #FFFFFF;
   border-radius: 4px;
-  display: inline-block;
+  display: block;
+  text-align: center;
+  margin: 1.25rem 0;
+  border: 2px solid #0066CC;
 }
 
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1.75rem 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
 }
 
 table th,
 table td {
   border: 1px solid #ddd;
-  padding: 0.75rem;
+  padding: 0.875rem;
   text-align: left;
+  color: #333333;
 }
 
 table thead {
-  background: #0A2342;
-  color: white;
+  background: #0066CC;
+  color: #FFFFFF;
 }
 
 table thead th {
   font-weight: 600;
   text-align: center;
+  color: #FFFFFF;
+  padding: 1rem;
 }
 
 table tbody tr:nth-child(even) {
-  background: #f8f9fa;
+  background: #F5F5F5;
 }
 
 table tbody tr:hover {
-  background: #e9ecef;
+  background: #E8F4F8;
 }
 
+table tbody td {
+  color: #333333;
+}
+
+/* Links */
+.section a,
+.contact-info a {
+  color: #0066CC;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.section a:hover,
+.contact-info a:hover {
+  color: #004999;
+  border-bottom-color: #004999;
+  text-decoration: none;
+}
+
+.section a:focus,
+.contact-info a:focus {
+  outline: 2px solid #0066CC;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Policy Footer */
 .policy-footer {
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 4rem;
+  padding-top: 2.5rem;
   border-top: 2px solid #e0e0e0;
   text-align: center;
 }
 
 .policy-footer p {
-  margin: 0.5rem 0;
-  color: #666666;
+  margin: 0.75rem 0;
+  color: #333333;
 }
 
 .contact-info {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background: #f8f9fa;
-  border-radius: 4px;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #F5F5F5;
+  border-radius: 6px;
 }
 
 .contact-info p {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
+  color: #333333;
 }
 
-.contact-info a {
-  color: #0A2342;
-  text-decoration: none;
-  font-weight: 500;
+/* Highlighting Styles for Important Information */
+.highlight-text {
+  font-weight: 700;
+  color: #BF360C;
 }
 
-.contact-info a:hover {
-  text-decoration: underline;
+.section ul li.highlight-text,
+.section ol li.highlight-text {
+  background: #FFE0B2;
+  padding: 0.5rem 0.75rem;
+  border-left: 3px solid #FF9800;
+  margin: 0.75rem 0;
+  border-radius: 3px;
+  color: #E65100;
 }
 
-.section a {
-  color: #0A2342;
-  text-decoration: none;
-  font-weight: 500;
+/* Scholarship Rules Section - Tips/Positive Info (Light Green) */
+.scholarship-rules-section {
+  background: #DFF0D8;
+  padding: 2.5rem;
+  border-radius: 8px;
+  border: 2px solid #4CAF50;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
 }
 
-.section a:hover {
-  text-decoration: underline;
+.scholarship-rules-heading {
+  color: #111111 !important;
+  font-size: 1.7rem !important;
+  border-bottom: 3px solid #4CAF50 !important;
+  padding-bottom: 0.875rem !important;
+  font-weight: 700 !important;
 }
 
+.subsection-note {
+  font-style: italic;
+  color: #333333;
+  margin-top: -0.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+/* Important Message Box - Important Notes (Yellow) */
+.important-message {
+  background: #FFF59D !important;
+  border: 2px solid #F9A825 !important;
+  padding: 1.5rem !important;
+  text-align: center;
+  font-size: 1.15rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  color: #5D4037 !important;
+}
+
+.important-message strong {
+  color: #3E2723;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Responsive Design - Tablet */
 @media (max-width: 768px) {
   .scholarship-policy-content {
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 1rem;
   }
 
+  .policy-header {
+    margin-bottom: 2rem;
+  }
+
   .policy-header h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .policy-header h2 {
     font-size: 1.2rem;
   }
 
+  .section {
+    margin-top: 2rem;
+  }
+
   .section h2 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
   }
 
   .subsection h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .subsection h4 {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   table {
@@ -243,32 +391,90 @@ table tbody tr:hover {
 
   table th,
   table td {
-    padding: 0.5rem;
+    padding: 0.625rem;
   }
 
   .formula {
     font-size: 1.1rem;
+    padding: 0.875rem;
+  }
+
+  .scholarship-rules-section {
+    padding: 1.5rem;
   }
 }
 
+/* Responsive Design - Mobile */
 @media (max-width: 480px) {
+  .scholarship-policy-content {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
   .policy-header h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .policy-header h2 {
-    font-size: 1rem;
-  }
-
-  .section h2 {
     font-size: 1.1rem;
   }
 
+  .section h2 {
+    font-size: 1.2rem;
+  }
+
+  .subsection h3 {
+    font-size: 1.1rem;
+  }
+
+  .section ul,
+  .section ol {
+    padding-left: 1.5rem;
+  }
+
   table {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .formula {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .scholarship-rules-section {
+    padding: 1.25rem;
+  }
+
+  .group-detail {
+    padding: 1rem;
+  }
+
+  .note {
+    padding: 0.875rem 1rem;
   }
 }
 
+/* Print Styles */
+@media print {
+  .scholarship-policy-content {
+    box-shadow: none;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+
+  .section h2 {
+    page-break-after: avoid;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+}
