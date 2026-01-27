@@ -27,7 +27,7 @@ const Hero = () => {
             </p>
             <div className="button">
               <button className="primary-btn">
-                ADMISSION NOW <i className="fa fa-long-arrow-alt-right"></i>
+                ENROLL TODAY <i className="fa fa-long-arrow-alt-right"></i>
               </button>
               <button>
                 VIEW COURSES <i className="fa fa-long-arrow-alt-right"></i>
