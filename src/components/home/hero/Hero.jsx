@@ -26,12 +26,8 @@ const Hero = () => {
               enhance Career, stay ahead in tech! 🚀
             </p>
             <div className="button">
-              <button className="primary-btn">
-                ENROLL TODAY <i className="fa fa-long-arrow-alt-right"></i>
-              </button>
-              <button>
-                VIEW COURSES <i className="fa fa-long-arrow-alt-right"></i>
-              </button>
+              <button className="primary-btn">ENROLL TODAY</button>
+              <button>VIEW COURSES</button>
             </div>
             <div
               className="scholarship-banner-link"
