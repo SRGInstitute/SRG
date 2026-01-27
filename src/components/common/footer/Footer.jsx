@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 import './footer.css';
 
 const Footer = () => {
+  const handleLinkClick = (e) => {
+    // Scroll to top when navigating
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <section className='newletter'>
@@ -53,22 +62,28 @@ const Footer = () => {
             </div>
           </div>
           <div className='box link'>
-            <h3>Menu</h3>
+            <h3>Quick Links</h3>
             <ul>
               <li>
-                <Link to='/about'>About Us</Link>
+                <Link to='/about' onClick={handleLinkClick}>About Us</Link>
               </li>
               <li>
-                <Link to='/courses'>Courses</Link>
+                <Link to='/courses' onClick={handleLinkClick}>Courses</Link>
               </li>
               <li>
-                <Link to='/courses'>Services</Link>
+                <Link to='/courses' onClick={handleLinkClick}>Services</Link>
               </li>
               <li>
-                <Link to='/journal'>Blog</Link>
+                <Link to='/journal' onClick={handleLinkClick}>Blog</Link>
               </li>
               <li>
-                <Link to='/contact'>Contact us</Link>
+                <Link to='/contact' onClick={handleLinkClick}>Contact us</Link>
+              </li>
+              <li>
+                <Link to='/privacy-policy' onClick={handleLinkClick}>Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to='/scholarship-policy#policy-title' onClick={handleLinkClick}>Scholarship Policy</Link>
               </li>
             </ul>
           </div>
