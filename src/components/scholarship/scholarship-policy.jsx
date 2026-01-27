@@ -4,9 +4,9 @@ import './scholarship-policy.css';
 
 const ScholarshipPolicyContent = () => (
   <div className="scholarship-policy-content">
-    <div className="policy-header">
+    <div className="policy-header" id="policy-header">
       <h1>SRG COMPUTER TRAINING INSTITUTE</h1>
-      <h2>SCHOLARSHIP TEST POLICY & EXAMINATION RULES</h2>
+      <h2 id="policy-title">SCHOLARSHIP TEST POLICY & EXAMINATION RULES</h2>
       <p className="policy-year">2026</p>
     </div>
 

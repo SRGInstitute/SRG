@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import BackPlain from '../common/back/BackPlain';
 import './ScholarshipResult.css';
 
@@ -198,6 +198,15 @@ const ScholarshipResult = () => {
                 {loading ? 'Checking...' : 'Check Result'}
               </button>
             </form>
+
+            <div className='policy-link-container'>
+              <Link to='/scholarship-policy#policy-title' className='policy-link'>
+                <span className='policy-link-icon'>
+                  <i className='fa fa-file-text-o' aria-hidden='true'></i>
+                </span>
+                <span className='policy-link-text'>View Scholarship Test Policy & Examination Rules 2026</span>
+              </Link>
+            </div>
 
             {message && <div className='result-message'>{message}</div>}
 
