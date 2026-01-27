@@ -1,45 +1,45 @@
-import React from 'react';
+import React from "react";
 
 const Head = ({ isScholarshipDisplay = false }) => {
   return (
     <>
-      <section className={`head ${isScholarshipDisplay ? 'scholarship-display-head' : ''}`}>
-        <div className='container flexSB'>
-          <div className='logo'>
+      <section
+        className={`head ${isScholarshipDisplay ? "scholarship-display-head" : ""}`}
+      >
+        <div className="container flexSB">
+          <div className="logo">
             <li>
-              <a href='https://srgeducation.in'>
-                <img src='/images/srg-logo.png' alt='SRG Logo' />
+              <a href="https://srgeducation.in">
+                <img src="/images/srg-logo.png" alt="SRG Logo" />
               </a>
             </li>
           </div>
 
-          <div className='tagline'>कंप्यूटर के साथ सपनो की उड़ान</div>
+          <div className="tagline">कंप्यूटर के साथ सपनो की उड़ान</div>
 
-          <div className='social'>
+          <div className="social">
             <a
-              href='https://www.facebook.com/SRGCTI/'
-              target='_blank'
-              rel='noopener noreferrer'>
-              <i className='fab fa-facebook-f icon'></i>
+              href="https://www.facebook.com/SRGCTI/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook-f icon"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/srg_computer/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram icon"></i>
             </a>
             <a
-              href='https://www.instagram.com/srg_computer/'
-              target='_blank'
-              rel='noopener noreferrer'>
-              <i className='fab fa-instagram icon'></i>
+              href="https://www.youtube.com/@SRGCTI/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-youtube icon"></i>
             </a>
-            <a
-              href='https://www.youtube.com/@SRGCTI/'
-              target='_blank'
-              rel='noopener noreferrer'>
-              <i className='fab fa-youtube icon'></i>
-            </a>
-            {/* <a
-              href='https://x.com/SRGCTI/'
-              target='_blank'
-              rel='noopener noreferrer'>
-              <i className='fab fa-twitter icon'></i>
-            </a> */}
           </div>
         </div>
       </section>

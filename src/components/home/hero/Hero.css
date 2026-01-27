@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../../../public/images/bg.webp');
+  background-image: url("../../../../public/images/bg.webp");
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -80,13 +80,17 @@
 }
 
 .scholarship-banner::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(243, 101, 35, 0.1) 0%, transparent 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(243, 101, 35, 0.1) 0%,
+    transparent 100%
+  );
   pointer-events: none;
 }
 
@@ -694,12 +698,12 @@
   }
 
   .hero {
-    background-position: right;
+    background-position: bottom;
     padding-right: 0;
-    padding-top: 400px;
+    padding-top: 270px;
     height: 100vh;
     background-image: none;
-    background: linear-gradient(135deg, #9DC8D1 0%, #76AAB6 100%);
+    background: linear-gradient(135deg, #9dc8d1 0%, #76aab6 100%);
   }
 
   .hero .row {

@@ -184,6 +184,12 @@ header ul li a:hover {
   color: #fff;
 }
 
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .start {
   font-size: 24px;
   font-weight: 700;
@@ -195,8 +201,16 @@ header ul li a:hover {
   flex-shrink: 0;
 }
 
+.head {
+  font-size: 16px;
+}
+
 .toggle {
   display: none;
+}
+
+.button-toggle {
+  margin: 10px !important;
 }
 
 /* Highlight external link */
@@ -275,7 +289,7 @@ header.scholarship-display-header nav ul li a.scholarship-nav-link:hover {
 /* 14" and 15" Laptop screens (900px - 1366px) */
 @media screen and (min-width: 900px) and (max-width: 1366px) {
   .head {
-    padding: 15px 0;
+    padding: 15px;
   }
 
   .logo h1 {
@@ -422,6 +436,7 @@ header.scholarship-display-header nav ul li a.scholarship-nav-link:hover {
 @media screen and (max-width: 767px) {
   .head {
     padding: 15px 0;
+    font-size: 28px !important;
   }
 
   .head .container {
@@ -486,7 +501,7 @@ header.scholarship-display-header nav ul li a.scholarship-nav-link:hover {
   nav.flexSB {
     flex-wrap: wrap;
     align-items: center;
-    padding: 12px 15px;
+    /* padding: 12px 15px; */
     position: relative;
     gap: 10px;
   }
@@ -495,7 +510,7 @@ header.scholarship-display-header nav ul li a.scholarship-nav-link:hover {
     order: 1;
     flex: 1 1 auto;
     min-width: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .start a {
@@ -614,7 +629,7 @@ header.scholarship-display-header nav ul li a.scholarship-nav-link:hover {
 
     .toggle {
       font-size: 24px;
-      padding: 5px;
+      /* padding: 5px; */
     }
 
     .mobile-nav {

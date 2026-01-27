@@ -163,7 +163,7 @@ const PrivacyContent = () => (
       </table>
       <p className="notes">
         <strong>Mode of Classes:</strong> Offline;{" "}
-        <strong>Class Schedule:</strong> 5/6 days/week;{" "}
+        <strong>Class Schedule:</strong> 5/6 days per week;{" "}
         <strong>Certificate Examination Fees:</strong> ₹300;{" "}
         <strong>Attendance Required:</strong> 90%.
       </p>
