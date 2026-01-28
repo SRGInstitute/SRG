@@ -346,7 +346,8 @@ const ScholarshipPolicyContent = () => (
     <div className="section scholarship-rules-section">
       <h2 className="scholarship-rules-heading">16. Rules & Responsibilities for Selected Scholarship Students</h2>
       <p className="subsection-note">(For Students & Parents)</p>
-      <p className="note">This section applies only to students who are selected for the scholarship.</p>
+      <p className="note">Scholarship is strictly non-transferable in any case and cannot be given to any other person, including brother, sister, friend, or relative.</p>
+
 
       <div className="subsection">
         <h3>16.1 Scholarship Is for Serious Learning</h3>
@@ -462,14 +463,34 @@ const ScholarshipPolicyContent = () => (
       <div className="subsection">
         <h3>16.10 Course Duration</h3>
         <ul>
-          <li>The scholarship course must be completed within the standard time decided by the institute.</li>
-          <li className="highlight-text">Long gaps, irregular attendance, or repeated absence may lead to course discontinuation.</li>
+          <li>The DCA course duration is <strong>6 months</strong>, from <strong>1st February 2026 to 31st July 2026</strong>.</li>
+          <li>The course will be counted from 1st February 2026, even if:
+            <ul>
+              <li>The student joins late</li>
+              <li>The student remains absent on some days</li>
+            </ul>
+          </li>
+          <li>Scholarship students must complete all classes and practice within this period only.</li>
+          <li>If a student does not attend regularly or takes long breaks, the institute will not be responsible for course delay.</li>
+          <li className="highlight-text">Failure to complete the course on time may lead to course discontinuation and cancellation of scholarship.</li>
         </ul>
       </div>
 
       <div className="subsection">
-        <h3>16.11 No Special Relaxation</h3>
+        <h3>16.11 Course Extension</h3>
         <ul>
+          <li>Course extension is not guaranteed.</li>
+          <li>If really required, maximum <strong>10 days</strong> extension may be given only once.</li>
+          <li>After <strong>31st July 2026 + 10 days</strong>, no extension will be given in any case.</li>
+          <li>Extension will be considered only if:
+            <ul>
+              <li>Attendance is minimum 90%</li>
+              <li>Student is serious about learning</li>
+              <li>Written request is given before course end date</li>
+            </ul>
+          </li>
+          <li>Medical, personal, exam, or family reasons will not allow extension beyond 10 days.</li>
+          <li>The institute's decision on extension will be final.</li>
           <li>Scholarship students must follow the same rules as paid students.</li>
           <li className="highlight-text">No extra chances, relaxation, or special treatment will be given because the course is free.</li>
           <li>Rules are equal for all students.</li>
@@ -477,7 +498,28 @@ const ScholarshipPolicyContent = () => (
       </div>
 
       <div className="subsection">
-        <h3>16.12 Cancellation of Scholarship</h3>
+        <h3>16.12 Certificate Rule</h3>
+        <ul>
+          <li>Certificate will be given only after full course completion.</li>
+          <li>If the course is not completed:
+            <ul>
+              <li>No certificate will be issued</li>
+              <li>No partial or temporary certificate will be given</li>
+            </ul>
+          </li>
+          <li>If a student fails to complete the course:
+            <ul>
+              <li>Within 1st Feb 2026 to 31st July 2026, or</li>
+              <li>Within the 10 days extension (if allowed)</li>
+            </ul>
+            then the course will be treated as incomplete and no certificate will be provided under any condition.
+          </li>
+          <li className="highlight-text">Request, pressure, or personal reasons will not change this rule.</li>
+        </ul>
+      </div>
+
+      <div className="subsection">
+        <h3>16.13 Cancellation of Scholarship</h3>
         <p>The scholarship may be cancelled if:</p>
         <ul>
           <li>Attendance falls below the required level.</li>
@@ -489,7 +531,7 @@ const ScholarshipPolicyContent = () => (
       </div>
 
       <div className="subsection">
-        <h3>16.13 Final Decision</h3>
+        <h3>16.14 Final Decision</h3>
         <ul>
           <li className="highlight-text">All decisions taken by SRG Computer Training Institute will be final and binding.</li>
           <li>Students and parents must follow and respect the institute's decision.</li>
@@ -497,7 +539,7 @@ const ScholarshipPolicyContent = () => (
       </div>
 
       <div className="subsection">
-        <h3>16.14 Acknowledgement (Applicable Only to Selected Scholarship Students)</h3>
+        <h3>16.15 Acknowledgement (Applicable Only to Selected Scholarship Students)</h3>
         <p>By accepting the scholarship, the student and parent/guardian confirm that they have read, understood, and agreed to all the above rules and responsibilities.</p>
         <p>These rules are subject to revision as per institute policy.</p>
         <p className="note highlight important-message">
