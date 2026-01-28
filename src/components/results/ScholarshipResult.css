@@ -1,5 +1,5 @@
 .scholarship-result {
-  padding: 60px 0;
+  padding: 20px 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #eef2f7 100%);
 }
 
@@ -159,7 +159,7 @@ body.modal-open {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -177,7 +177,7 @@ body.modal-open {
 }
 
 .policy-link:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background: #1a4d7a;
   text-decoration: none;
   transform: translateY(-2px);
@@ -201,7 +201,7 @@ body.modal-open {
   justify-content: center;
   width: 22px;
   height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   flex-shrink: 0;
 }
 
@@ -365,7 +365,6 @@ body.modal-open {
   font-weight: 700;
   color: #0d3d5f;
 }
-
 
 /* Tablet and below */
 @media screen and (max-width: 992px) {
