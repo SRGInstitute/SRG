@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CCC MCQ Test | SRG Computer Training Institute</title>
+  <style>
+    :root {
+      --navy: #172554;
+      --blue: #2563eb;
+      --orange: #f97316;
+      --ink: #172033;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --bg: #f4f7fb
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+      color: var(--ink)
+    }
+
+    .top {
+      background: linear-gradient(120deg, #172554, #1d4ed8);
+      color: white;
+      padding: 28px 18px
+    }
+
+    .wrap {
+      max-width: 1050px;
+      margin: auto
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .logo {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--orange);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      border: 3px solid #fdba74
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: .8
+    }
+
+    .top h1 {
+      font-size: clamp(22px, 4vw, 34px);
+      margin: 5px 0
+    }
+
+    .top p {
+      margin: 0;
+      color: #dbeafe
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin: 20px 0
+    }
+
+    .field,
+    .panel,
+    .question,
+    .result {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px
+    }
+
+    .field input {
+      width: 100%;
+      padding: 11px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font: inherit
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 16px 0
+    }
+
+    .progressbox {
+      flex: 1;
+      min-width: 190px
+    }
+
+    .progressline {
+      height: 8px;
+      background: #e2e8f0;
+      border-radius: 99px;
+      overflow: hidden;
+      margin-top: 8px
+    }
+
+    .progressline span {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: var(--orange);
+      transition: width .2s
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 235px;
+      gap: 18px;
+      align-items: start
+    }
+
+    .question {
+      margin-bottom: 14px;
+      padding: 20px
+    }
+
+    .qhead {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start
+    }
+
+    .num {
+      flex-shrink: 0;
+      background: #eff6ff;
+      color: #1d4ed8;
+      font-weight: 800;
+      padding: 7px 10px;
+      border-radius: 8px
+    }
+
+    .qtext {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.5;
+      padding-top: 3px
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 16px 0 0 44px
+    }
+
+    .option {
+      display: flex;
+      gap: 9px;
+      align-items: flex-start;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 11px;
+      cursor: pointer;
+      line-height: 1.4;
+      transition: .15s
+    }
+
+    .option:hover {
+      border-color: #93c5fd;
+      background: #f8fbff
+    }
+
+    .option:has(input:checked) {
+      border-color: var(--blue);
+      background: #eff6ff
+    }
+
+    .option input {
+      margin-top: 3px;
+      accent-color: var(--blue)
+    }
+
+    aside {
+      position: sticky;
+      top: 14px
+    }
+
+    .side-title {
+      font-weight: 800;
+      margin-bottom: 12px
+    }
+
+    .gridnums {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px
+    }
+
+    .gridnums button {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 7px;
+      padding: 8px 0;
+      cursor: pointer
+    }
+
+    .gridnums button.done {
+      background: #dbeafe;
+      border-color: #93c5fd;
+      color: #1d4ed8
+    }
+
+    .gridnums button.current {
+      outline: 2px solid var(--orange)
+    }
+
+    .btn:disabled {
+      opacity: .55;
+      cursor: not-allowed
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 9px;
+      padding: 12px 16px;
+      font-weight: 800;
+      cursor: pointer;
+      font: inherit
+    }
+
+    .primary {
+      background: var(--orange);
+      color: white
+    }
+
+    .secondary {
+      background: #e2e8f0;
+      color: #172033
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 20px 0 35px
+    }
+
+    .result {
+      display: none;
+      margin: 18px 0;
+      padding: 24px
+    }
+
+    .score {
+      font-size: 42px;
+      font-weight: 900;
+      color: #1d4ed8
+    }
+
+    .review-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      line-height: 1.5
+    }
+
+    .correct {
+      color: #15803d;
+      font-weight: 700
+    }
+
+    .wrong {
+      color: #b91c1c;
+      font-weight: 700
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 22px;
+      font-size: 13px
+    }
+
+    @media(max-width:760px) {
+      .layout {
+        grid-template-columns: 1fr
+      }
+
+      aside {
+        position: static;
+        order: -1
+      }
+
+      .gridnums {
+        grid-template-columns: repeat(10, 1fr)
+      }
+
+      .options {
+        grid-template-columns: 1fr;
+        margin-left: 0
+      }
+
+      .meta {
+        grid-template-columns: 1fr
+      }
+
+      .question {
+        padding: 15px
+      }
+    }
+
+    @media print {
+      .top {
+        background: #fff;
+        color: #111;
+        padding: 10px
+      }
+
+      .top p {
+        color: #333
+      }
+
+      .toolbar,
+      aside,
+      .actions,
+      .meta,
+      .footer {
+        display: none
+      }
+
+      .layout {
+        display: block
+      }
+
+      .question {
+        break-inside: avoid
+      }
+
+      .option {
+        border-color: #bbb
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">SRG</div>
+        <div>
+          <div class="eyebrow">SRG Computer Training Institute</div>
+          <h1>Course on Computer Concepts (CCC)</h1>
+          <p>Introduction to Operating System · MCQ Practice Test</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="panel" style="margin-top:18px"><strong>Important:</strong> After submission, your answers are saved for
+      teacher review. Your score and correct answers will not be displayed immediately. Do not close this page until you
+      see the submission confirmation.</div>
+    <section class="meta">
+      <div class="field"><label for="student">Student name *</label><input id="student"
+          placeholder="Enter your full name" autocomplete="name" required maxlength="100"></div>
+      <div class="field"><label for="studentId">Student ID *</label><input id="studentId"
+          placeholder="Enter your SRG student ID" required maxlength="40" autocomplete="off"></div>
+      <div class="field"><label for="duration">Test details</label><input id="duration"
+          value="100 questions · Single correct answer · Results released later by teacher" readonly></div>
+    </section>
+    <div class="toolbar">
+      <div class="progressbox"><strong id="progressText">0 of 100 answered</strong>
+        <div class="progressline"><span id="progressBar"></span></div>
+      </div><span class="muted">Your score and correct answers will not be shown after submission.</span>
+    </div>
+    <section class="layout">
+      <div>
+        <form id="quiz"></form>
+        <div class="actions"><button class="btn primary" id="submit" type="button">Submit answers</button><button
+            class="btn secondary" id="clear" type="button">Clear answers</button><button class="btn secondary"
+            id="print" type="button">Print test</button></div>
+        <section class="result" id="result" aria-live="polite"></section>
+      </div>
+      <aside>
+        <div class="panel">
+          <div class="side-title">Question navigator</div>
+          <div class="muted" style="margin-bottom:12px">Blue = answered</div>
+          <div class="gridnums" id="navigator"></div>
+          <p class="muted" style="margin-bottom:0">Click a number to jump to a question.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer class="footer">SRG Computer Training Institute · CCC · Introduction to Operating System</footer>
+  <script>
+    const questions = [{ "n": 1, "q": "What is an operating system?", "options": ["A type of computer hardware", "System software that manages computer resources", "A document editing application", "A programming language computer resources"] }, { "n": 2, "q": "Which of the following is a primary function of an operating system?", "options": ["Printing documents without a printer", "Creating presentations only", "Managing hardware & software resources", "Designing websites"] }, { "n": 3, "q": "Which of the following is an example of a desktop operating system?", "options": ["Microsoft Windows", "Microsoft Word", "Google Chrome", "Adobe Photoshop"] }, { "n": 4, "q": "Which operating system is commonly used on Apple Mac computers?", "options": ["Android", "iOS", "Windows", "macOS"] }, { "n": 5, "q": "Which of the following is an open-source operating system?", "options": ["Microsoft Windows", "Ubuntu Linux", "Microsoft Office", "Adobe Reader"] }, { "n": 6, "q": "Which operating system is commonly used on smartphones manufactured by various companies?", "options": ["MS-DOS", "Windows Server", "Android", "UNIX only"] }, { "n": 7, "q": "Which operating system is primarily used on Apple's iPhone?", "options": ["iOS", "Android", "Windows", "Linux Mint"] }, { "n": 8, "q": "What is the main purpose of a graphical user interface (GUI)?", "options": ["To increase the physical size of", "To replace all computer", "To make computers work a computer without electricity", "To allow users to interact using graphical elements"] }, { "n": 9, "q": "Which of the following is an example of system software?", "options": ["Calculator application", "Operating system", "Photo editing application", "Music player application"] }, { "n": 10, "q": "What does multitasking mean in an operating system?", "options": ["Running or managing multiple tasks during the same period", "Using only one application", "Turning off all background tasks during the same period processes", "Removing files automatically forever"] }, { "n": 11, "q": "Which operating system component manages the allocation of RAM to programs?", "options": ["Taskbar", "File extension", "Memory management system", "Desktop wallpaper"] }, { "n": 12, "q": "Which component of an operating system is responsible for communicating with hardware devices?", "options": ["Desktop icon", "File manager", "Screen saver", "Device driver"] }, { "n": 13, "q": "What is the kernel of an operating system?", "options": ["A type of printer", "The core component that manages essential system operations", "A desktop shortcut", "A file compression format manages essential system operations"] }, { "n": 14, "q": "Which of the following is an example of a mobile operating system?", "options": ["Android", "Microsoft Excel", "Windows Notepad", "Adobe Illustrator"] }, { "n": 15, "q": "What is booting?", "options": ["Deleting the operating system", "Changing the desktop background", "Starting a computer and loading its operating system", "Printing a file"] }, { "n": 16, "q": "Which type of operating system allows several users to access system resources?", "options": ["Single-file operating system", "Multi-user operating system", "Single-folder operating system", "Standalone application"] }, { "n": 17, "q": "Which of the following is a benefit of using an operating system?", "options": ["It eliminates the need for all", "It makes every application free", "It prevents users from saving hardware files", "It provides a convenient environment to run applications"] }, { "n": 18, "q": "Which operating system is associated with the Linux family?", "options": ["Ubuntu", "iOS", "Windows 11", "macOS"] }, { "n": 19, "q": "Which of the following is a common feature of modern desktop and mobile operating systems?", "options": ["They can operate only without", "They cannot manage files", "They support user interaction a display and application execution", "They require the same hardware in every device"] }, { "n": 20, "q": "Which software is responsible for coordinating CPU time among running processes?", "options": ["Word processor", "Operating system scheduler", "Image viewer", "File extension manager"] }, { "n": 21, "q": "What is the desktop in a graphical operating system?", "options": ["The main screen area displayed after signing in", "The physical computer table processor", "A type of printer after signing in", "The computer’s internal processor"] }, { "n": 22, "q": "In a typical Windows desktop, where is the taskbar commonly located by default?", "options": ["Inside the Recycle Bin", "At the top of every application", "At the bottom of the screen", "Inside File Explorer only window"] }, { "n": 23, "q": "What is the primary purpose of the Start menu in Windows?", "options": ["To physically restart the", "To access applications, settings and power options", "To create only text documents monitor", "To change printer ink"] }, { "n": 24, "q": "Which taskbar feature commonly displays the current time and date?", "options": ["Desktop wallpaper", "Recycle Bin", "File Explorer", "Notification area or system tray"] }, { "n": 25, "q": "What is an icon?", "options": ["A graphical representation of a", "A computer's power cable", "A type of RAM file, folder, application or function", "A printer cartridge"] }, { "n": 26, "q": "What is a desktop shortcut?", "options": ["A duplicate of the entire", "A physical button on the", "A link that provides quick operating system access to an item", "A replacement for a computer's keyboard hard disk"] }, { "n": 27, "q": "What is the usual Windows keyboard shortcut to open the Start menu?", "options": ["Ctrl + S", "Windows key", "Alt + F4", "Ctrl + P"] }, { "n": 28, "q": "Which shortcut is commonly used to switch between open applications in Windows?", "options": ["Ctrl + C", "Ctrl + V", "Windows + L", "Alt + Tab"] }, { "n": 29, "q": "Which keyboard shortcut commonly closes the active application window in Windows?", "options": ["Alt + F4", "Ctrl + A", "Ctrl + Z", "Windows + E"] }, { "n": 30, "q": "What does minimizing a window do?", "options": ["Permanently deletes the application", "Uninstalls the application", "Hides the window from the desktop while keeping it open", "Shuts down the computer"] }, { "n": 31, "q": "What does maximizing a window generally do?", "options": ["Closes the window", "Expands the window to occupy the available screen area", "Deletes the window's files", "Moves the window to the the available screen area Recycle Bin"] }, { "n": 32, "q": "Which application is commonly used to browse files and folders in Windows?", "options": ["Paint", "Calculator", "Microsoft Word", "File Explorer"] }, { "n": 33, "q": "What is the usual purpose of the Recycle Bin?", "options": ["To temporarily store deleted files before permanent removal", "To store installed applications connections permanently", "To increase CPU speed files before permanent removal", "To manage internet"] }, { "n": 34, "q": "Which action is generally performed by double-clicking an application icon?", "options": ["Rename the application", "Delete the application", "Open or launch the application", "Shut down the computer"] }, { "n": 35, "q": "Which keyboard shortcut commonly opens File Explorer in Windows?", "options": ["Ctrl + F", "Windows + E", "Alt + Enter", "Windows + P"] }, { "n": 36, "q": "Which of the following is used to search for applications or files in Windows?", "options": ["Printer tray", "Screen brightness button only", "Recycle Bin", "Search box or Search feature"] }, { "n": 37, "q": "What does pinning an application to the taskbar do?", "options": ["Provides quick access to the application from the taskbar", "Removes the application from", "Makes the application application from the taskbar inaccessible", "Automatically changes the the computer application's file extension"] }, { "n": 38, "q": "Which action is commonly used to arrange desktop icons automatically in Windows?", "options": ["Format the hard disk", "Uninstall the operating system option", "Right-click the desktop and choose an icon arrangement option", "Disconnect the monitor"] }, { "n": 39, "q": "What is the purpose of the notification area in the Windows taskbar?", "options": ["To display only document", "To show system status icons and notifications", "To replace the CPU contents", "To permanently store deleted"] }, { "n": 40, "q": "What is the purpose of the lock screen on a computer?", "options": ["To remove all user accounts", "To format the computer", "To uninstall the operating system", "To protect access to the user session until authentication"] }, { "n": 41, "q": "Which is a common method of launching an application in Windows?", "options": ["Open the Start menu and select the application", "Remove the computer's RAM installation folder", "Disconnect the keyboard the application", "Delete the application's"] }, { "n": 42, "q": "What is the function of the mouse pointer?", "options": ["To increase storage capacity", "To install device drivers automatically", "To indicate the current position and interact with screen elements", "To print a document"] }, { "n": 43, "q": "Which mouse action is commonly used to select an item?", "options": ["Pressing the scroll wheel", "Single-clicking the item", "Disconnecting the mouse continuously", "Double-clicking the power"] }, { "n": 44, "q": "Which mouse action is commonly used to open a file or folder in Windows?", "options": ["Scrolling upward", "Pressing the right mouse", "Moving the pointer away", "Double-clicking the item"] }, { "n": 45, "q": "What is the primary purpose of the right-click operation?", "options": ["To display a context menu with relevant commands", "To shut down the computer", "To permanently delete the relevant commands operating system", "To increase screen resolution immediately"] }, { "n": 46, "q": "Which mouse property controls how quickly the pointer moves across the screen?", "options": ["Printer speed", "File size", "Pointer speed", "Screen saver time"] }, { "n": 47, "q": "Which setting can help a left-handed user operate a mouse more comfortably?", "options": ["Change the file extension", "Switch the primary mouse button", "Disable all display settings", "Change the system date button"] }, { "n": 48, "q": "Where can a Windows user commonly change the system date and time?", "options": ["Recycle Bin", "Paint", "WordPad", "Date & time settings"] }, { "n": 49, "q": "Which feature can automatically adjust the computer's clock using internet time information?", "options": ["Set time automatically or synchronize with a time server", "Change the desktop icon size", "Format a USB drive synchronize with a time server", "Rename the Recycle Bin"] }, { "n": 50, "q": "What is screen resolution?", "options": ["The physical weight of a", "The speed of the computer's", "The number of pixels displayed horizontally and vertically", "The amount of RAM installed processor"] }, { "n": 51, "q": "Which display setting is used to change the size of text and applications on screen?", "options": ["Printer sharing", "Display scaling", "File compression", "Mouse button assignment"] }, { "n": 52, "q": "Which setting is used to change the desktop background image?", "options": ["Device Manager", "File extension settings", "Printer queue", "Personalization or Background settings"] }, { "n": 53, "q": "Which Windows setting can be used to change the screen brightness on supported devices?", "options": ["Display settings", "Recycle Bin settings", "File Explorer settings only", "Printer settings"] }, { "n": 54, "q": "Which feature allows a laptop to display its screen on an external monitor?", "options": ["Recycle Bin", "Disk Cleanup", "Display projection or display mode settings", "File extension association"] }, { "n": 55, "q": "Which setting controls the period of inactivity before a screen turns off?", "options": ["Mouse button setting", "Power and screen timeout settings", "File sharing settings", "Printer preferences settings"] }, { "n": 56, "q": "Which option is used to install a new application on a Windows computer?", "options": ["Delete the desktop", "Empty the Recycle Bin", "Change the mouse pointer", "Run the application’s installer or use a supported app store"] }, { "n": 57, "q": "What is the purpose of uninstalling a program?", "options": ["To remove the installed application and its associated components", "To increase the monitor's keyboard layout only physical size", "To create a desktop shortcut application and its associated only components", "To change the computer's"] }, { "n": 58, "q": "In Windows, where can a user commonly view and uninstall installed applications?", "options": ["Desktop wallpaper", "Notification area only", "Settings → Apps → Installed apps", "Mouse properties"] }, { "n": 59, "q": "What does a Windows feature generally refer to?", "options": ["A physical part of the mouse", "An optional operating system component or capability", "A document's font size", "A printer's paper tray component or capability"] }, { "n": 60, "q": "Which Windows utility is commonly used to enable or disable optional Windows features?", "options": ["Paint", "Calculator", "Recycle Bin", "Turn Windows features on or off"] }, { "n": 61, "q": "Which action is recommended before uninstalling an application that contains important user data?", "options": ["Check and back up important data if needed", "Delete every file on the computer", "Disconnect the monitor data if needed", "Change the system clock"] }, { "n": 62, "q": "What is the purpose of a printer driver?", "options": ["To increase the size of a", "To remove all operating system", "To allow the operating system to communicate with the printer", "To change the desktop files wallpaper"] }, { "n": 63, "q": "Which Windows setting is commonly used to add a printer?", "options": ["Mouse settings", "Settings → Bluetooth & devices → Printers & scanners", "Desktop icon arrangement", "Display scaling → Printers & scanners"] }, { "n": 64, "q": "What is a default printer?", "options": ["The printer that is physically", "A printer that cannot print", "A printer used only for largest photographs", "The printer selected automatically for printing when no other printer is specified"] }, { "n": 65, "q": "What is the purpose of a print queue?", "options": ["To manage documents waiting to be printed", "To store desktop shortcuts", "To change the operating system to be printed", "To create folders automatically"] }, { "n": 66, "q": "What does printer sharing allow?", "options": ["A printer to operate without", "A printer to increase its paper", "Other authorized users or devices to use a shared printer", "A printer to uninstall capacity automatically applications"] }, { "n": 67, "q": "Which of the following is generally required to use a network printer?", "options": ["A desktop shortcut to the", "A suitable connection and printer configuration", "A different operating system for Recycle Bin every page", "A file with the .mp3 extension printer configuration"] }, { "n": 68, "q": "What should a user do when a print job is stuck in the print queue?", "options": ["Change the desktop wallpaper", "Rename the document appropriate extension", "Delete the operating system", "Check the printer status and cancel or restart the stuck job if appropriate"] }, { "n": 69, "q": "Which of the following is a common connection method for a printer?", "options": ["USB or network connection", "HDMI audio output only", "Desktop shortcut", "File compression"] }, { "n": 70, "q": "Which option is used to remove a printer from a Windows computer?", "options": ["Change the screen resolution", "Empty the Recycle Bin", "Remove the printer from Printers & scanners settings", "Change the mouse pointer speed"] }, { "n": 71, "q": "What is the main purpose of a folder?", "options": ["To increase processor speed", "To organize and group files and other folders", "To change screen brightness", "To replace the operating other folders system"] }, { "n": 72, "q": "Which keyboard shortcut is commonly used to create a new folder in Windows File Explorer?", "options": ["Ctrl + P", "Alt + F4", "Ctrl + X", "Ctrl + Shift + N"] }, { "n": 73, "q": "Which keyboard shortcut is used to copy a selected file or folder?", "options": ["Ctrl + C", "Ctrl + X", "Ctrl + V", "Ctrl + Z"] }, { "n": 74, "q": "Which keyboard shortcut is used to paste a copied file or folder?", "options": ["Ctrl + A", "Ctrl + S", "Ctrl + V", "Ctrl + P"] }, { "n": 75, "q": "What does moving a file from one folder to another generally do?", "options": ["Creates a new operating system", "Changes the file’s location", "Permanently deletes the file", "Converts the file into a printer"] }, { "n": 76, "q": "What is the purpose of the Copy command?", "options": ["To permanently erase the", "To shut down the computer selected item", "To change the system date selected file", "To create another copy of the selected item"] }, { "n": 77, "q": "What does the Cut command generally do when used on a file?", "options": ["Marks the file for moving to another location", "Creates a backup copy immediately", "Changes the file's content another location", "Prints the file"] }, { "n": 78, "q": "Which keyboard shortcut selects all items in the current folder?", "options": ["Ctrl + C", "Ctrl + V", "Ctrl + A", "Ctrl + P"] }, { "n": 79, "q": "What is the purpose of renaming a file?", "options": ["To change the file's physical", "To change its name", "To increase its size location automatically", "To uninstall its associated"] }, { "n": 80, "q": "Which of the following is a valid example of a file name?", "options": ["C:\\Program Files\\", "D:\\", "..", "Report2026.docx"] }, { "n": 81, "q": "What is a file path?", "options": ["The address or location of a file in a storage system", "A computer's processor speed", "The file's printing quality in a storage system", "A mouse pointer setting"] }, { "n": 82, "q": "What is a subfolder?", "options": ["A folder that cannot contain", "A printer setting", "A folder located inside another folder", "A computer's power option"] }, { "n": 83, "q": "What is the purpose of restoring a file from the Recycle Bin?", "options": ["To convert it into a program", "To return it to its original location", "To permanently remove it", "To change its file extension location automatically"] }, { "n": 84, "q": "Which action is generally needed to permanently delete a file from the Recycle Bin?", "options": ["Change the mouse settings", "Rename the desktop", "Open the Start menu only", "Empty the Recycle Bin or delete the selected item permanently"] }, { "n": 85, "q": "What is the main purpose of file compression?", "options": ["To reduce file size or combine files for easier storage and transfer", "To change the computer's operating system", "To increase the physical size of files for easier storage and the monitor transfer", "To uninstall applications"] }, { "n": 86, "q": "Which of the following is a common compressed file format?", "options": [".docx", ".mp3", ".zip", ".bmp"] }, { "n": 87, "q": "What is cloud storage?", "options": ["A folder that exists only on the", "Storing data on remote servers accessed over a network", "A type of printer", "A computer's RAM"] }, { "n": 88, "q": "Which permission is generally needed to modify files in a shared folder?", "options": ["Display scaling permission", "Screen brightness permission", "Mouse pointer permission", "Write or modify permission"] }, { "n": 89, "q": "What does read-only access to a file generally allow?", "options": ["Viewing the file without modifying its contents", "Permanently deleting the file", "Changing the file's name in modifying its contents every location", "Formatting the storage drive"] }, { "n": 90, "q": "Which practice helps protect important files from accidental loss?", "options": ["Store every file in the Recycle", "Disable all security features", "Maintain regular backups", "Delete all folders every day"] }, { "n": 91, "q": "Which file extension is commonly associated with a Microsoft Word document?", "options": [".xlsx", ".docx", ".pptx", ".mp3"] }, { "n": 92, "q": "Which file extension is commonly used for Microsoft Excel workbooks?", "options": [".docx", ".jpg", ".txt", ".xlsx"] }, { "n": 93, "q": "Which file extension is commonly used for Microsoft PowerPoint presentations?", "options": [".pptx", ".xlsx", ".pdf", ".wav"] }, { "n": 94, "q": "Which file extension is commonly associated with PDF documents?", "options": [".exe", ".mp3", ".pdf", ".png"] }, { "n": 95, "q": "Which of the following is a common image file extension?", "options": [".docx", ".jpg", ".exe", ".xlsx"] }, { "n": 96, "q": "Which file extension is commonly associated with audio files?", "options": [".pptx", ".html", ".bmp", ".mp3"] }, { "n": 97, "q": "Which file extension is commonly associated with video files?", "options": [".mp4", ".txt", ".docx", ".xlsx"] }, { "n": 98, "q": "Which file extension is commonly used for plain text files?", "options": [".pptx", ".jpg", ".txt", ".mp3"] }, { "n": 99, "q": "Which file extension is commonly associated with a Windows executable program?", "options": [".pdf", ".exe", ".png", ".docx"] }, { "n": 100, "q": "Which file extension is commonly used for an HTML webpage?", "options": [".xlsx", ".mp3", ".pptx", ".html"] }];
+    const SCRIPT_URL = 'PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+    const TEST_ID = 'CCC-OS-SET-1';
+    const letters = ['A', 'B', 'C', 'D'];
+    const quiz = document.getElementById('quiz'), nav = document.getElementById('navigator');
+    let submitted = false;
+    questions.forEach((q, i) => { const card = document.createElement('section'); card.className = 'question'; card.id = 'question-' + q.n; card.innerHTML = `<div class="qhead"><span class="num">Q${q.n}</span><div class="qtext"></div></div><div class="options"></div>`; card.querySelector('.qtext').textContent = q.q; const opts = card.querySelector('.options'); q.options.forEach((opt, j) => { const label = document.createElement('label'); label.className = 'option'; const radio = document.createElement('input'); radio.type = 'radio'; radio.name = 'q' + q.n; radio.value = letters[j]; radio.addEventListener('change', updateProgress); const span = document.createElement('span'); span.textContent = letters[j] + ') ' + opt; label.append(radio, span); opts.append(label) }); quiz.append(card); const b = document.createElement('button'); b.type = 'button'; b.textContent = q.n; b.addEventListener('click', () => card.scrollIntoView({ behavior: 'smooth', block: 'start' })); nav.append(b) });
+    function updateProgress() { let n = 0; questions.forEach(q => { const selected = document.querySelector(`input[name="q${q.n}"]:checked`); if (selected) n++; nav.children[q.n - 1].classList.toggle('done', !!selected) }); document.getElementById('progressText').textContent = `${n} of ${questions.length} answered`; document.getElementById('progressBar').style.width = (n / questions.length * 100) + '%' }
+    function getAnswers() { const answers = {}; questions.forEach(q => { const selected = document.querySelector(`input[name="q${q.n}"]:checked`); answers[String(q.n)] = selected ? selected.value : '' }); return answers }
+    function setLocked(locked) { document.querySelectorAll('#quiz input').forEach(x => x.disabled = locked); document.getElementById('student').disabled = locked; document.getElementById('studentId').disabled = locked; document.getElementById('clear').disabled = locked; document.getElementById('submit').disabled = locked; }
+    document.getElementById('submit').addEventListener('click', async () => {
+      if (submitted) return;
+      const name = document.getElementById('student').value.trim(), studentId = document.getElementById('studentId').value.trim();
+      if (!name || !studentId) { alert('Please enter both your full name and student ID.'); return; }
+      const answers = getAnswers(); const answered = Object.values(answers).filter(Boolean).length; const unanswered = questions.length - answered;
+      if (unanswered && !confirm(`You have ${unanswered} unanswered question(s). Submit anyway?`)) return;
+      if (!confirm('Submit your answers now? You will not be able to edit this submission, and your score will not be shown.')) return;
+      const btn = document.getElementById('submit'); btn.disabled = true; btn.textContent = 'Submitting…';
+      try {
+        const payload = { action: 'submit', testId: TEST_ID, studentName: name, studentId: studentId, answers: answers };
+        // Preferred: when served by Apps Script HtmlService, google.script.run avoids cross-origin fetch issues.
+        let data;
+        if (window.google && google.script && google.script.run) {
+          data = await new Promise((resolve, reject) => google.script.run.withSuccessHandler(resolve).withFailureHandler(reject).submitStudentAnswers(payload));
+        } else {
+          if (!SCRIPT_URL.startsWith('https://script.google.com/macros/s/')) throw new Error('The test administrator has not configured the submission service yet.');
+          const response = await fetch(SCRIPT_URL, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload), redirect: 'follow' });
+          data = await response.json();
+          if (!response.ok) throw new Error(data.message || 'Submission could not be saved.');
+        }
+        if (!data || !data.ok) throw new Error((data && data.message) || 'Submission could not be saved.');
+        submitted = true; setLocked(true); document.getElementById('result').style.display = 'block'; document.getElementById('result').innerHTML = `<h2>Submission received</h2><p>Your answers have been submitted successfully.</p><p><strong>Submission reference:</strong> ${escapeHtml(data.submissionId || 'Saved')}</p><p>Your score and correct answers are hidden until your teacher reviews and releases the result.</p><p>Please keep this reference for your records.</p>`; document.getElementById('result').scrollIntoView({ behavior: 'smooth' }); btn.textContent = 'Submitted';
+      } catch (err) { btn.disabled = false; btn.textContent = 'Submit answers'; alert('Submission failed: ' + (err.message || 'Please check your internet connection and try again. Your answers have not been confirmed as saved.')); }
+    });
+    document.getElementById('clear').addEventListener('click', () => { if (submitted) return; if (confirm('Clear all selected answers?')) { document.querySelectorAll('#quiz input').forEach(x => x.checked = false); document.getElementById('result').style.display = 'none'; updateProgress() } }); document.getElementById('print').addEventListener('click', () => window.print()); function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])) }
+    updateProgress();
+  </script>
+</body>
+
+</html>
